@@ -14,7 +14,6 @@
 
 .slick-arrow:hover { @apply text-green-700; }
 
-
 @media (min-width: theme('screens.sm')) {
     .js-fade-slider-nav .slick-arrow { @apply text-f35 top-48; }
 }

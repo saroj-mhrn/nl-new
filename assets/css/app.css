@@ -7,4 +7,6 @@
 
 @import "tailwindcss/utilities";
 
-@import "./slick.css"
+@import "./animation.css";
+
+@import "./slick.css";

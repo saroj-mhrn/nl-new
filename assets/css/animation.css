@@ -1,0 +1,25 @@
+@keyframes leftright {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -10px;
+    }
+}
+
+@keyframes updown {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -10px;
+    }
+}
+
+.anim-updown {
+    animation: updown 1s infinite alternate;
+}
+
+.anim-leftright {
+    animation: leftright 1s infinite alternate;
+}

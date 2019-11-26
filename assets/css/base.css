@@ -24,6 +24,10 @@ a { transition: color 0.3s ease-in, background-color 0.3s ease-in, border 0.3s e
 .js-will-blur { transition: filter 0.3s linear; }
 .blur { -webkit-filter: url(#svg-blur); filter: url(#svg-blur); }
 
+.js-help.active { @apply w-344; }
+.js-help.active .hidden { @apply block; }
+.js-help.active .block { @apply hidden; }
+
 .cart-panel { @apply -right-600 transition; }
 
 .cart-active .cart-panel { @apply right-0; }
