@@ -1,0 +1,24 @@
+@import "../../node_modules/slick-carousel/slick/slick.css";
+
+.js-fade-slider-nav .slick-arrow { @apply absolute top-30 text-f22 text-green-400; }
+.js-fade-slider-nav .slick-prev { @apply left-11p; }
+.js-fade-slider-nav .slick-next { @apply right-11p; }
+.js-fade-slider-nav .slick-dots { @apply absolute bottom-17 left-20 right-20 flex flex-wrap items-center justify-center; }
+.js-fade-slider-nav .slick-dots button { @apply cursor-pointer block transition text-f0 w-9 h-9 border border-white bg-gray-300 rounded-full m-4 outline-none }
+.js-fade-slider-nav .slick-dots .slick-active button,
+.js-fade-slider-nav .slick-dots button:hover { @apply bg-green-400 border-green-300; }
+
+.js-slider .slick-arrow { @apply absolute top-40p text-f35 text-green-100; }
+.js-slider .slick-prev { @apply -left-10p; }
+.js-slider .slick-next { @apply -right-10p; }
+
+.slick-arrow:hover { @apply text-green-700; }
+
+
+@media (min-width: theme('screens.sm')) {
+    .js-fade-slider-nav .slick-arrow { @apply text-f35 top-48; }
+}
+
+@media (min-width: theme('screens.lg')) {
+    .js-fade-slider-nav .slick-arrow { @apply text-f52; }
+}

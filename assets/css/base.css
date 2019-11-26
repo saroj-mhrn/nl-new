@@ -1,0 +1,44 @@
+html, body { @apply h-full; }
+html { @apply font-agenda leading-tighter font-medium text-gray-100 antialiased; font-size: 16px; }
+
+body { @apply text-base; }
+
+h1 { @apply text-4xl; }
+
+a { transition: color 0.3s ease-in, background-color 0.3s ease-in, border 0.3s ease-in, opacity 0.3s ease-in; }
+
+.hover-border { @apply relative; }
+.hover-border:after { @apply absolute transition left-50p bottom-0 translate-xhn w-0 h-4 bg-green-100; }
+.hover-border:hover:after { @apply w-full; }
+
+.btn { @apply bg-green-200 text-white text-f20 leading-snug px-25 py-12 font-bold text-center inline-flex items-center justify-center outline-none rounded-50 min-w-200; }
+.btn-lg { @apply text-f22; }
+.btn-sm { @apply font-medium text-f16 py-7; }
+
+.btn-gray { @apply bg-gray-200 text-gray-100; }
+.btn:hover { @apply bg-green-700 text-white; }
+
+.list-tick li { @apply pl-35 }
+.list-tick li:before { content: '\e90b'; @apply font-icomoon float-left -ml-35 mt-2 text-green-600; }
+
+.js-will-blur { transition: filter 0.3s linear; }
+.blur { -webkit-filter: url(#svg-blur); filter: url(#svg-blur); }
+
+.cart-panel { @apply -right-600 transition; }
+
+.cart-active .cart-panel { @apply right-0; }
+
+
+@media (min-width: theme('screens.md')) {
+    .hover-border:after { content: ''; }
+
+    .btn-lg { @apply text-f22 pt-17 pb-21 min-w-367; }
+
+    .list-tick li { @apply pl-60 }
+    .list-tick li:before { @apply -ml-60 }
+}
+
+@media (max-width: 1023px) {
+    .js-nav { @apply -mr-400 overflow-y-auto; }
+    .js-nav-active .js-nav { @apply mr-0; }
+}
