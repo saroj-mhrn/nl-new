@@ -10,26 +10,42 @@
 </head>
 <body>
     <div class="w-full overflow-hidden relative pt-47 sm:pt-66 md:pt-94">
-        <header class="bg-white md:pt-20 z-99 fixed top-0 left-0 right-0 font-bold text-lg shadow-s1">
-            <div class="container">
-                <!-- mobile header -->
-                <div class="flex items-center justify-between md:hidden py-10 sm:py-15">
-                    <a href="/" class="block w-139 sm:w-201 p-4"><img src="assets/images/nurture-life-m.svg" alt="Nurture Life"></a>
-                    <a href="#" class="js-nav-opener icon-menu text-f18 sm:text-f22 text-green-600 hover:text-green-700"></a>
-                </div>
+        <header class="bg-white md:pt-20 z-99 fixed top-0 left-0 right-0 font-bold text-lg md:shadow-s1">
+            <!-- mobile header -->
+            <div class="flex items-center justify-between md:hidden px-17 sm:px-24 py-9 sm:py-15 bg-white relative z-2 shadow-s1">
+                <a href="/" class="block w-149 sm:w-201 p-4 -ml-4"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
+                <a href="#" class="js-nav-opener icon-menu text-f16 sm:text-f22 text-green-600 hover:text-green-700"></a>
+            </div>
 
-                <nav class="js-nav fixed md:static right-0 top-0 bottom-0 md:flex md:items-start md:justify-between bg-white w-300 md:w-auto shadow-s1 md:shadow-none py-50 md:py-0 transition md:overflow-y-none">
-                    <a href="#" class="js-nav-opener icon-close text-f20 text-green-400 hover:text-green-700 md:hidden absolute top-20 right-20"></a>
+            <div class="container">
+                <nav class="js-nav fixed md:static right-0 top-46 sm:top-66 bottom-0 md:flex md:items-start md:justify-between bg-white w-250 sm:w-300 md:w-auto shadow-s1 md:shadow-none py-28 md:py-0 transition md:overflow-y-none text-center md:text-left">
                     <ul class="md:flex md:items-center md:-mx-13">
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Menus</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">How It Works</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Nutrition</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Menus</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">How It Works</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Nutrition</a></li>
                     </ul>
-                    <a href="/" class="hidden md:block w-268 p-9"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
+                    <a href="/" class="hidden md:block absolute top-50p left-50p translate-c w-268 p-9"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
                     <ul class="md:flex md:items-center md:-mx-13">
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Knowledge Center</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Gifts</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Contact</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Knowledge Center</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Gifts</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20">
+                            <a href="#" class="btn btn-green px-28 pt-6 pb-7">Login</a>
+
+                            <div class="hidden absolute top-full left-50p translate-xhn w-340 rounded-b-15 bg-white shadow-s4 py-24 px-40 mt-19">
+                                <div class="mb-18">
+                                    <input class="block w-full bg-gray-200 rounded-30 py-3 px-15 h-38 sm:h-35 placeholder-gray-100 outline-none shadow-none text-f14 text-center" type="email" placeholder="Email Address">
+                                </div>
+                                <div class="mb-15">
+                                    <input class="block w-full bg-gray-200 rounded-30 py-3 px-15 h-38 sm:h-35 placeholder-gray-100 outline-none shadow-none text-f14 text-center" type="password" placeholder="Password">
+                                </div>
+                                <div class="mb-18">
+                                    <button type="button" class="btn w-full pt-9 pb-10 sm:py-8 block text-f14">Login</button>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="block text-f12 text-gray-100a50 hover:text-green-200">Forgot Password?</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
