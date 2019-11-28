@@ -10,4 +10,5 @@ $(document).ready(function($){
     Helper.ImgReveal();
     Helper.SlickCarousel();
     Helper.Help();
+    Helper.Modal();
 });

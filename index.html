@@ -10,85 +10,188 @@
 </head>
 <body>
     <div class="w-full overflow-hidden relative pt-47 sm:pt-66 md:pt-94">
-        <header class="bg-white md:pt-20 z-99 fixed top-0 left-0 right-0 font-bold text-lg shadow-s1">
-            <div class="container">
-                <!-- mobile header -->
-                <div class="flex items-center justify-between md:hidden py-10 sm:py-15">
-                    <a href="/" class="block w-139 sm:w-201 p-4"><img src="assets/images/nurture-life-m.svg" alt="Nurture Life"></a>
-                    <a href="#" class="js-nav-opener icon-menu text-f18 sm:text-f22 text-green-600 hover:text-green-700"></a>
-                </div>
+        <header class="bg-white md:pt-20 z-99 fixed top-0 left-0 right-0 font-bold text-lg md:shadow-s1">
+            <!-- mobile header -->
+            <div class="flex items-center justify-between md:hidden px-17 sm:px-24 py-9 sm:py-15 bg-white relative z-2 shadow-s1">
+                <a href="/" class="block w-149 sm:w-201 p-4 -ml-4"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
+                <a href="#" class="js-nav-opener icon-menu text-f16 sm:text-f22 text-green-600 hover:text-green-700"></a>
+            </div>
 
-                <nav class="js-nav fixed md:static right-0 top-0 bottom-0 md:flex md:items-start md:justify-between bg-white w-300 md:w-auto shadow-s1 md:shadow-none py-50 md:py-0 transition md:overflow-y-none">
-                    <a href="#" class="js-nav-opener icon-close text-f20 text-green-400 hover:text-green-700 md:hidden absolute top-20 right-20"></a>
+            <div class="container">
+                <nav class="js-nav fixed md:static right-0 top-46 sm:top-66 bottom-0 md:flex md:items-start md:justify-between bg-white w-250 sm:w-300 md:w-auto shadow-s1 md:shadow-none py-28 md:py-0 transition md:overflow-y-none text-center md:text-left">
                     <ul class="md:flex md:items-center md:-mx-13">
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Menus</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">How It Works</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Nutrition</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Menus</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">How It Works</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Nutrition</a></li>
                     </ul>
-                    <a href="/" class="hidden md:block w-268 p-9"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
+                    <a href="/" class="hidden md:block absolute top-50p left-50p translate-c w-268 p-9"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
                     <ul class="md:flex md:items-center md:-mx-13">
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Knowledge Center</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Gifts</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Contact</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Knowledge Center</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 sm:text-gray-100 hover:text-green-100 hover-border">Gifts</a></li>
+                        <li class="relative mb-22 md:mb-0 lg:mr-20">
+                            <a href="#" class="btn btn-green px-28 pt-6 pb-7">Login</a>
+
+                            <div class="absolute top-full left-50p translate-xhn w-340 rounded-b-15 bg-white p-30">
+                                
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <main>
-            <section class="text-center pt-86 pb-93 bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/hero-home.jpg');">
+            <section class="text-center pt-94 sm:pt-86 pb-46 sm:pb-93 bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/hero-home.jpg');">
                 <div class="max-w-sm mx-auto px-24">
-                    <h1 class="font-black text-f50 md:text-f70 leading-a14 text-green-100 mb-5">Radical Meal Service</h1>
-                    <p class="text-f26 md:text-f40 leading-a35 mx-3p mb-55">Wholesome, Freshly-Made Meals & <br> Snacks for the Whole Family</p>
+                    <h1 class="font-black text-f30 sm:text-f50 md:text-f70 leading-a14 text-green-100 mb-7 sm:mb-5">Radical Meal Service</h1>
+                    <p class="sm:text-f26 md:text-f40 leading-medium sm:leading-a35 mx-3p mb-25 sm:mb-55">Wholesome, Freshly-Made Meals & <br> Snacks for the Whole Family</p>
                     <a href="#" class="btn btn-lg">Get Started</a>
                 </div>
             </section>
 
-            <section class="text-center pt-55 pb-48">
+            <section class="text-center pt-50 sm:pt-55 pb-48">
                 <div class="container">
-                    <h2 class="font-black text-f32 sm:text-f38 md:text-f50 leading-a14 md:leading-a35 text-green-100 mb-45">How It Works</h2>
-                    <ul class="flex flex-wrap px-15 md:-mx-48 text-18 md:text-f22 leading-a27">
-                        <li class="sm:w-1/3 px-15 md:px-48 mb-43">
-                            <div class="w-100 md:w-169 mx-auto mb-37">
+                    <h2 class="font-black text-f30 sm:text-f38 md:text-f50 leading-z93 sm:leading-a14 md:leading-a35 text-green-100 mb-34 sm:mb-45">How It Works</h2>
+                    <ul data-slick-mobile data-slick='{ "arrows": false }' class="flex flex-wrap px-15 pb-40 sm:pb-0 md:-mx-48 text-f16 md:text-f22 leading-medium sm:leading-a27">
+                        <li class="sm:w-1/3 px-15 md:px-48 sm:mb-43">
+                            <div class="w-100 md:w-169 mx-auto mb-31 sm:mb-37">
                                 <img src="assets/images/img-placeholder01.png" class="inline-block" alt="">
                             </div>
-                            <strong class="block font-bold mb-11">Select Your Meals</strong>
+                            <strong class="block font-bold text-f18 md:text-f22 leading-a27 mb-6 sm:mb-11">Select Your Meals</strong>
                             <p>Pick the right meals for your child’s age and dietary preferences (even picky eaters!)</p>
                         </li>
-                        <li class="sm:w-1/3 px-15 md:px-48 mb-43">
-                            <div class="w-100 md:w-169 mx-auto mb-37">
+                        <li class="sm:w-1/3 px-15 md:px-48 sm:mb-43">
+                            <div class="w-100 md:w-169 mx-auto mb-31 sm:mb-37">
                                 <img src="assets/images/img-placeholder01.png" class="inline-block" alt="">
                             </div>
-                            <strong class="block font-bold mb-11">We Cook & Deliver</strong>
+                            <strong class="block font-bold text-f18 md:text-f22 leading-a27 mb-6 sm:mb-11">We Cook & Deliver</strong>
                             <p>Pediatric dietitian-approved meals shipped cold directly to your door.</p>
                         </li>
-                        <li class="sm:w-1/3 px-15 md:px-48 mb-43">
-                            <div class="w-100 md:w-169 mx-auto mb-37">
+                        <li class="sm:w-1/3 px-15 md:px-48 sm:mb-43">
+                            <div class="w-100 md:w-169 mx-auto mb-31 sm:mb-37">
                                 <img src="assets/images/img-placeholder01.png" class="inline-block" alt="">
                             </div>
-                            <strong class="block font-bold mb-11">Heat & Eat</strong>
+                            <strong class="block font-bold text-f18 md:text-f22 leading-a27 mb-6 sm:mb-11">Heat & Eat</strong>
                             <p>When mealtime arrives, just reheat in your microwave or oven for your kids to enjoy!</p>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="pt-98 pb-82 bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/img01.jpg');">
+            <!-- Menu mobile only -->
+            <hr class="border-t border-gray-100a20 mx-15 sm:hidden">
+            <section class="pt-49 pb-99 sm:hidden">
                 <div class="container">
-                    <h2 class="font-black text-f32 sm:text-f38 md:text-f50 leading-a14 md:leading-a35 text-green-100 mb-21">Our Meals Are..</h2>
-                    <ul class="text-18 md:text-f22 leading-a27 mb-42 list-tick">
-                        <li class="mb-18">Made from the highest quality ingredients.</li>
-                        <li class="mb-18">Freshly made and pediatric dietitian-approved.</li>
-                        <li class="mb-18">Ready in 3 minutes or less, giving you more family time!</li>
-                    </ul>
-                    <a href="#" class="btn btn-lg">Get Started</a>
+                    <h2 class="text-center font-black text-f30 leading-z93 text-green-100 mb-30">Meals for Any Age & Every Stage</h2>
+                    
+                    <div data-slick-mobile data-slick='{ "arrows": false }' class="slick-visible pb-40 mb-31">
+                        <div class="px-6">
+                            <div class="shadow-s1 rounded-10 overflow-hidden">
+                                <div class="bg-cover bg-center bg-no-repeat h-210" style="background-image: url('/assets/images/img12.jpg');"></div>
+                                <div class="text-center px-23 pt-16 pb-20">
+                                    <div class="border-b border-gray-100a20 pb-17 mb-19">
+                                        <h3 class="font-bold text-f22 leading-a35 mb-3">Finger Foods</h3>
+                                        <p class="leading-a38">Stage 3 Babies</p>
+                                    </div>
+                                    <strong class="block font-bold text-green-100">Starting at $8.95</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="shadow-s1 rounded-10 overflow-hidden">
+                                <div class="bg-cover bg-center bg-no-repeat h-210" style="background-image: url('/assets/images/img13.jpg');"></div>
+                                <div class="text-center px-23 pt-16 pb-20">
+                                    <div class="border-b border-gray-100a20 pb-17 mb-19">
+                                        <h3 class="font-bold text-f22 leading-a35 mb-3">Toddler Meals</h3>
+                                        <p class="leading-a38">1 - 3 Year Olds</p>
+                                    </div>
+                                    <strong class="block font-bold text-green-100">Starting at $8.95</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="shadow-s1 rounded-10 overflow-hidden">
+                                <div class="bg-cover bg-center bg-no-repeat h-210" style="background-image: url('/assets/images/img14.jpg');"></div>
+                                <div class="text-center px-23 pt-16 pb-20">
+                                    <div class="border-b border-gray-100a20 pb-17 mb-19">
+                                        <h3 class="font-bold text-f22 leading-a35 mb-3">Kid Meals</h3>
+                                        <p class="leading-a38">4 - 12+ Year Olds</p>
+                                    </div>
+                                    <strong class="block font-bold text-green-100">Starting at $8.95</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="shadow-s1 rounded-10 overflow-hidden">
+                                <div class="bg-cover bg-center bg-no-repeat h-210" style="background-image: url('/assets/images/img15.jpg');"></div>
+                                <div class="text-center px-23 pt-16 pb-20">
+                                    <div class="border-b border-gray-100a20 pb-17 mb-19">
+                                        <h3 class="font-bold text-f22 leading-a35 mb-3">Cold Lunches</h3>
+                                        <p class="leading-a38">Perfect for Toddlers & Kids</p>
+                                    </div>
+                                    <strong class="block font-bold text-green-100">Starting at $8.95</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="shadow-s1 rounded-10 overflow-hidden">
+                                <div class="bg-cover bg-center bg-no-repeat h-210" style="background-image: url('/assets/images/img16.jpg');"></div>
+                                <div class="text-center px-23 pt-16 pb-20">
+                                    <div class="border-b border-gray-100a20 pb-17 mb-19">
+                                        <h3 class="font-bold text-f22 leading-a35 mb-3">Snacks</h3>
+                                        <p class="leading-a38">For All Ages!</p>
+                                    </div>
+                                    <strong class="block font-bold text-green-100">Starting at $8.95</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="shadow-s1 rounded-10 overflow-hidden">
+                                <div class="bg-cover bg-center bg-no-repeat h-210" style="background-image: url('/assets/images/img17.jpg');"></div>
+                                <div class="text-center px-23 pt-16 pb-20">
+                                    <div class="border-b border-gray-100a20 pb-17 mb-19">
+                                        <h3 class="font-bold text-f22 leading-a35 mb-3">Family Meals</h3>
+                                        <p class="leading-a38">2 - 4 Adult Servings</p>
+                                    </div>
+                                    <strong class="block font-bold text-green-100">Starting at $8.95</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#" class="btn">View All Menus</a>
+                    </div>
                 </div>
             </section>
 
-            <section class="py-65">
+            <section class="z-1 relative sm:pt-98 pb-15 sm:pb-82">
+                <div class="container">
+                    <div class="relative sm:static pt-82 pb-20 sm:p-0 mb-25 sm:mb-0">
+                        <div class="-z-1 absolute top-0 bottom-0 left-0 right-0 bg-cover bg-center bg-no-repeat -mx-25 sm:mx-0" style="background-image: url('/assets/images/img01.jpg');"></div>
+                        <h2 class="font-black text-f30 sm:text-f38 md:text-f50 leading-a14 md:leading-a35 text-green-100 sm:mb-21">
+                            <!-- mobile title -->
+                            <span class="sm:hidden">All of Our <br> Meals Are..</span>
+                            <!-- desktop title -->
+                            <span class="hidden sm:inline">Our Meals Are..</span>
+                        </h2>
+                    </div>
+                    <ul class="text-18 md:text-f22 leading-a27 mb-37 sm:mb-42 list-tick">
+                        <li class="mb-10 sm:mb-18">Made from the highest quality ingredients.</li>
+                        <li class="mb-10 sm:mb-18">Freshly made and pediatric dietitian-approved.</li>
+                        <li class="mb-10 sm:mb-18">Ready in 3 minutes or less, giving you more family time!</li>
+                    </ul>
+                    <div class="text-center sm:text-left">
+                        <a href="#" class="btn btn-lg">Get Started</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu table & desktop only -->
+            <section class="py-65 hidden sm:block">
                 <div class="container">
                     <header class="text-center text-18 md:text-f22 leading-a27 mb-70">
-                        <h2 class="font-black text-f32 sm:text-f38 md:text-f50 leading-a14 md:leading-a35 text-green-100 mb-12">Check Out Some of Our Favorites!</h2>
+                        <h2 class="font-black text-f30 sm:text-f38 md:text-f50 leading-z93 sm:leading-a14 md:leading-a35 text-green-100 mb-12">Check Out Some of Our Favorites!</h2>
                         <p>All of our meals and snacks are made with love and super good ingredients. Sort below based on age, dietary preferences, allergens and type of eater!</p>
                     </header>
                     <ul class="flex flex-wrap -mx-17 mb-27">
@@ -351,13 +454,22 @@
                 </div>
             </section>
 
-            <div class="relative overflow-hidden pt-49 pb-62">
-                <div class="absolute bottom-0 left-50p w-full min-w-1060 sm:min-w-1180 md:min-w-1400 lg:min-w-1645 xl:min-w-1920">
-                    <img src="/assets/images/img06.jpg" class="relative float-left w-full left-n50p" alt="">
-                </div>
+            <div class="relative sm:overflow-hidden py-49 sm:pb-62">
+                <picture class="absolute bottom-0 left-50p w-full min-w-951 sm:min-w-1060 sm:min-w-1180 md:min-w-1400 lg:min-w-1645 xl:min-w-1920">
+                    <!-- desktop -->
+                    <source srcset="/assets/images/img06.jpg" media="(min-width: 768px)" />
+                    <!-- mobile -->
+                    <img srcset="/assets/images/img18.jpg" class="relative float-left w-full left-n50p" alt="" />
+                </picture>
 
                 <div class="container md:flex md:items-end relative">
-                    <div class="md:w-47p mb-78 md:mb-0">
+                    <!-- mobile only -->
+                    <div class="sm:hidden text-center mb-48">
+                        <h2 class="text-center font-black text-f30 leading-z93 text-green-100 mb-8">Heat & Eat</h2>
+                        <p>Cooked to order, ready in 3 minutes!</p>
+                    </div>
+
+                    <div class="md:w-47p mb-25 sm:mb-78 md:mb-0">
                         <div class="js-fade-slider text-center sm:text-left">
                             <div class="relative js-img-reveal max-w-300 sm:max-w-400 lg:max-w-500 xl:max-w-630">
                                 <div class="js-img absolute top-0 left-0 bottom-0 overflow-hidden max-w-full z-1">
@@ -383,17 +495,17 @@
                         </div>
                     </div>
                     <div class="md:w-53p mb-0 md:mb-70 xl:mb-119">
-                        <div class="js-fade-slider-nav bg-white rounded-92 px-17p pt-21 lg:pt-42 pb-40 lg:pb-51 text-center leading-tighter lg:leading-none">
+                        <div class="js-fade-slider-nav bg-white rounded-92 px-17p pt-14 sm:pt-21 lg:pt-42 pb-17 sm:pb-40 lg:pb-51 text-center leading-tighter lg:leading-none">
                             <div class="pb-3">
-                                <h2 class="font-bold text-24 sm:text-f30 lg:text-f50 text-green-400 mb-2">Chicken Meatballs</h2>
+                                <h2 class="font-bold text-f22 sm:text-f30 lg:text-f50 text-green-400 mb-2">Chicken Meatballs</h2>
                                 <h3 class="font-medium text-18 sm:text-f20 lg:text-f40">Pasta & Veggies</h3>
                             </div>
                             <div class="pb-3">
-                                <h2 class="font-bold text-24 sm:text-f30 lg:text-f50 text-green-400 mb-2">Chicken Meatballs</h2>
+                                <h2 class="font-bold text-f22 sm:text-f30 lg:text-f50 text-green-400 mb-2">Chicken Meatballs</h2>
                                 <h3 class="font-medium text-18 sm:text-f20 lg:text-f40">Pasta & Veggies</h3>
                             </div>
                             <div class="pb-3">
-                                <h2 class="font-bold text-24 sm:text-f30 lg:text-f50 text-green-400 mb-2">Chicken Meatballs</h2>
+                                <h2 class="font-bold text-f22 sm:text-f30 lg:text-f50 text-green-400 mb-2">Chicken Meatballs</h2>
                                 <h3 class="font-medium text-18 sm:text-f20 lg:text-f40">Pasta & Veggies</h3>
                             </div>
                         </div>
@@ -401,79 +513,108 @@
                 </div>
             </div>
 
+            <!-- mobile only -->
+            <section class="sm:hidden relative overflow-hidden text-center pt-47 pb-51">
+                <div class="container">
+                    <h2 class="font-black text-f30 sm:text-f38 md:text-f50 leading-z93 sm:leading-a14 md:leading-a35 text-green-100 mb-26 sm:mb-45">What Experts Say</h2>
+
+                    <div class="-z-1 absolute bottom-195 left-50p translate-xhn w-900 h-900 rounded-full shadow-s4"></div>
+
+                    <div data-slick-mobile data-slick='{ "arrows": false }' class="pb-27">
+                        <div class="px-10 text-base leading-medium">
+                            <q class="block mb-28">Nurture Life truly helps families by giving parents piece of mind their kids are being nourished properly, while taking away the stress of planning and preparation.</q>
+                            <cite class="block not-italic">
+                                <img src="/assets/images/lara.png" alt="" class="rounded-full w-124 h-124 relative mx-auto mb-13">
+                                <strong class="block font-bold -mb-2">Lara Field</strong>
+                                <span class="block text-f12">Pediatric Registered Dietitian</span>
+                            </cite>
+                        </div>
+                        <div class="px-10 text-base leading-medium">
+                            <q class="block mb-28">Nurture Life truly helps families by giving parents piece of mind their kids are being nourished properly, while taking away the stress of planning and preparation.</q>
+                            <cite class="block not-italic">
+                                <img src="/assets/images/lara.png" alt="" class="rounded-full w-124 h-124 relative mx-auto mb-13">
+                                <strong class="block font-bold -mb-2">Lara Field</strong>
+                                <span class="block text-f12">Pediatric Registered Dietitian</span>
+                            </cite>
+                        </div>
+                        <div class="px-10 text-base leading-medium">
+                            <q class="block mb-28">Nurture Life truly helps families by giving parents piece of mind their kids are being nourished properly, while taking away the stress of planning and preparation.</q>
+                            <cite class="block not-italic">
+                                <img src="/assets/images/lara.png" alt="" class="rounded-full w-124 h-124 relative mx-auto mb-13">
+                                <strong class="block font-bold -mb-2">Lara Field</strong>
+                                <span class="block text-f12">Pediatric Registered Dietitian</span>
+                            </cite>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <aside class="bg-gray-200 py-28">
                 <div class="container">
-                    <ul class="flex items-center justify-center -mx-8 sm:-mx-20 md:-mx-44">
-                        <li class="p-8 sm:p-20 md:px-33 md:py-30"><img src="/assets/images/forbes.png" width="288" class="transition opacity-67 hover:opacity-100" alt=""></li>
-                        <li class="p-8 sm:p-20 md:px-33 md:py-30"><img src="/assets/images/goop.png" width="220" class="transition opacity-67 hover:opacity-100" alt=""></li>
-                        <li class="p-8 sm:p-20 md:px-33 md:py-30"><img src="/assets/images/martha-stewart.png" width="201" class="transition opacity-67 hover:opacity-100" alt=""></li>
-                        <li class="p-8 sm:p-20 md:px-33 md:py-30"><img src="/assets/images/people.png" width="213" class="transition opacity-67 hover:opacity-100" alt=""></li>
-                        <li class="p-8 sm:p-20 md:px-33 md:py-30"><img src="/assets/images/vogue.png" width="288" class="transition opacity-67 hover:opacity-100" alt=""></li>
+                    <ul class="flex flex-wrap sm:flex-no-wrap items-center justify-center -mx-8 sm:-mx-20 md:-mx-44">
+                        <li class="p-8 sm:p-20 md:px-33 md:py-30 w-1/3 sm:w-auto max-w-120 sm:max-w-none"><img src="/assets/images/forbes.png" width="288" class="transition sm:opacity-67 hover:opacity-100" alt=""></li>
+                        <li class="p-8 sm:p-20 md:px-33 md:py-30 w-1/3 sm:w-auto max-w-120 sm:max-w-none"><img src="/assets/images/goop.png" width="220" class="transition sm:opacity-67 hover:opacity-100" alt=""></li>
+                        <li class="p-8 sm:p-20 md:px-33 md:py-30 w-1/3 sm:w-auto max-w-120 sm:max-w-none"><img src="/assets/images/martha-stewart.png" width="201" class="transition sm:opacity-67 hover:opacity-100" alt=""></li>
+                        <li class="p-8 sm:p-20 md:px-33 md:py-30 w-40p sm:w-auto max-w-120 sm:max-w-none"><img src="/assets/images/people.png" width="213" class="transition sm:opacity-67 hover:opacity-100" alt=""></li>
+                        <li class="p-8 sm:p-20 md:px-33 md:py-30 w-40p sm:w-auto max-w-120 sm:max-w-none"><img src="/assets/images/vogue.png" width="288" class="transition sm:opacity-67 hover:opacity-100" alt=""></li>
                     </ul>
                 </div>
             </aside>
         </main>
 
-        <footer class="bg-white overflow-hidden">
-            <div class="relative z-1">
-                <div class="-z-1 absolute bottom-0 left-50p w-full min-w-1400 sm:min-w-1645 md:min-w-1920">
+        <footer class="bg-white">
+            <div class="relative z-1 overflow-hidden">
+                <!-- BG desktop only -->
+                <div class="hidden sm:block -z-1 absolute bottom-0 left-50p w-full min-w-1400 sm:min-w-1645 md:min-w-1920">
                     <img src="/assets/images/img07.jpg" class="relative float-left w-full left-n50p" alt="">
                 </div>
+
                 <div class="container">
-                    <div class="w-60p sm:w-50p pt-90 sm:pt-100 md:pt-154 pb-57 sm:pb-79 -ml-10">
-                        <img src="/assets/images/nurture-life-slogan.svg" alt="Nurture Life | Growing up. Eating well.">
-                    </div>
-                    <div class="pt-60 md:pt-78 pb-40 md:pb-64 w-full sm:w-76p md:w-1/2">
-                        <nav class="flex flex-wrap -mx-5 sm:-mx-15 font-medium sm:font-bold text-f14 sm:text-base text-shadow-normal">
-                            <div class="w-1/3 px-5 sm:px-15">
-                                <ul class="list-reset">
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Our Team</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Our Story</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">What We Stand For</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Careers</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="w-1/3 px-5 sm:px-15">
-                                <ul class="list-reset">
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Food & Nutrition</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Nutrition Facts</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Our Partners</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Packaging</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Customer Reviews</a></li>
-                                </ul>
-                            </div>
-                            <div class="w-1/3 px-5 sm:px-15">
-                                <ul class="list-reset">
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Knowledge Center</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Picky Eaters</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">FAQ</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">News</a></li>
-                                    <li class="mb-8"><a href="#" class="text-white hover:text-green-100">Gifts</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+                    <picture class="block w-230 sm:w-50p pt-70 sm:pt-100 md:pt-154 pb-19 sm:pb-79 -ml-3 sm:-ml-10">
+                        <!-- desktop -->
+                        <source srcset="/assets/images/nurture-life-slogan.svg" media="(min-width: 768px)" />
+                        <!-- mobile -->
+                        <img srcset="/assets/images/nurture-life-slogan-mb.svg" alt="Nurture Life | Growing up. Eating well." />
+                    </picture>
+                    <div class="relative py-37 sm:pt-60 md:pt-78 sm:pb-40 md:pb-64 w-full sm:w-76p md:w-1/2">
+                        <!-- BG mobile only -->
+                        <div class="sm:hidden -z-1 absolute top-0 bottom-0 -left-25 -right-25 bg-green-900">
+                            <img src="/assets/images/img-duck.png" width="93" class="absolute right-10 -top-62" alt="">
+                        </div>
+                        <ul class="col-count-2 sm:col-count-3 font-bold text-f14 sm:text-base sm:text-shadow-normal">
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Our Team</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Our Story</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">What We Stand For</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Careers</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Contact Us</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Food & Nutrition</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Nutrition Facts</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Our Partners</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Packaging</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Customer Reviews</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Knowledge Center</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Picky Eaters</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">FAQ</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">News</a></li>
+                            <li class="mb-13 sm:mb-8"><a href="#" class="text-white sm:hover:text-green-100">Gifts</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <ul class="pt-15 pb-24 sm:flex sm:justify-between sm:items-center text-green-500 text-f14 text-center sm:text-left">
-                    <li>&copy; 2019 <a href="/" class="text-green-500 hover:text-green-700">NURTURE LIFE</a>, INC.</li>
+                <ul class="pt-23 sm:pt-15 pb-24 -mr-20 sm:mx-0 text-green-900 sm:text-green-500 text-f11 sm:text-f14 uppercase sm:text-center">
+                    <li class="sm:float-left inline-block">&copy; 2019 <a href="/" class="text-green-900 sm:text-green-500 hover:text-green-700">NURTURE LIFE</a>, INC.</li>
+                    <li class="inline-block px-2 sm:px-7 sm:hidden"><span class="hidden sm:inline">-</span><span class="sm:hidden">•</span></li>
+                    <li class="inline-block"><a href="#" class="text-green-900 sm:text-green-500 hover:text-green-700">Terms & conditions</a></li>
+                    <li class="inline-block px-2 sm:px-7"><span class="hidden sm:inline">-</span><span class="sm:hidden">•</span></li>
+                    <li class="inline-block"><a href="#" class="text-green-900 sm:text-green-500 hover:text-green-700">Privacy policy</a></li>
 
-                    <li>
-                        <ul class="flex items-center justify-center uppercase mt-10 mb-19 sm:my-0">
-                            <li><a href="#" class="text-green-500 hover:text-green-700">Terms & conditions</a></li>
-                            <li class="px-7">-</li>
-                            <li><a href="#" class="text-green-500 hover:text-green-700">Privacy policy</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <ul class="flex items-center justify-center text-f18 sm:text-f22 mt-2 -mx-7">
-                            <li class="px-7"><a href="#" class="text-green-500 hover:text-green-700"><i class="block icon-facebook"></i></a></li>
-                            <li class="px-7"><a href="#" class="text-green-500 hover:text-green-700"><i class="block icon-twitter"></i></a></li>
-                            <li class="px-7"><a href="#" class="text-green-500 hover:text-green-700"><i class="block icon-instagram"></i></a></li>
-                            <li class="px-7"><a href="#" class="text-green-500 hover:text-green-700"><i class="block icon-pinterest"></i></a></li>
+                    <li class="sm:float-right pt-15 sm:pt-0">
+                        <ul class="flex items-center text-f21 sm:text-f22 mt-2 -mx-7">
+                            <li class="px-7"><a href="#" class="text-green-900 sm:text-green-500 hover:text-green-700"><i class="block icon-facebook"></i></a></li>
+                            <li class="px-7"><a href="#" class="text-green-900 sm:text-green-500 hover:text-green-700"><i class="block icon-twitter"></i></a></li>
+                            <li class="px-7"><a href="#" class="text-green-900 sm:text-green-500 hover:text-green-700"><i class="block icon-instagram"></i></a></li>
+                            <li class="px-7"><a href="#" class="text-green-900 sm:text-green-500 hover:text-green-700"><i class="block icon-pinterest"></i></a></li>
                         </ul>
                     </li>
                 </ul>

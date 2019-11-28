@@ -5,17 +5,22 @@ body { @apply text-base; }
 
 h1 { @apply text-4xl; }
 
-a { transition: color 0.3s ease-in, background-color 0.3s ease-in, border 0.3s ease-in, opacity 0.3s ease-in; }
+a, button { transition: color 0.3s ease-in, background-color 0.3s ease-in, border 0.3s ease-in, opacity 0.3s ease-in; }
+
+input + .icon-check:before { @apply opacity-0 transition; }
+input:checked + .icon-check:before { @apply opacity-100; }
+
+.input { @apply w-full border border-gray-400 rounded-10 text-f16 leading-a17 outline-none appearance-none h-50 px-22 py-5 mb-14 text-gray-400; }
 
 .hover-border { @apply relative; }
-.hover-border:after { @apply absolute transition left-50p bottom-0 translate-xhn w-0 h-4 bg-green-100; }
-.hover-border:hover:after { @apply w-full; }
+.hover-border:after { @apply absolute transition left-50p bottom-0 translate-xhn w-0 h-4 bg-green-100 rounded-10; }
+.hover-border:hover:after, .active .hover-border:after { @apply w-full; }
 
-.btn { @apply bg-green-200 text-white text-f20 leading-snug px-25 py-12 font-bold text-center inline-flex items-center justify-center outline-none rounded-50 min-w-200; }
-.btn-lg { @apply text-f22; }
-.btn-sm { @apply font-medium text-f16 py-7; }
+.btn { @apply relative bg-green-200 text-white leading-snug px-40 inline-flex items-center justify-center outline-none rounded-50 font-bold text-base; }
 
 .btn-gray { @apply bg-gray-200 text-gray-100; }
+.btn-white { @apply bg-white text-gray-100a50; }
+.btn-dark-gray { @apply bg-gray-100 text-white; }
 .btn:hover { @apply bg-green-700 text-white; }
 
 .list-tick li { @apply pl-35 }
@@ -32,14 +37,36 @@ a { transition: color 0.3s ease-in, background-color 0.3s ease-in, border 0.3s e
 
 .cart-active .cart-panel { @apply right-0; }
 
+.modal,
+.modal-box { @apply opacity-0 invisible transition; }
+.modal-active .modal,
+.modal-active .modal-box.show { @apply opacity-100 visible; }
+
+@media (max-width: 767px) {
+    .btn { @apply text-f14 py-9 min-w-199; }
+
+    .container { @apply max-w-full !important; }
+}
+
+@media (min-width: theme('screens.sm')) {
+    .input { @apply text-f18 h-63; }
+
+    .btn-a { @apply text-f20 py-12 min-w-200; }
+    .btn-b { @apply text-f20 pt-6 pb-11; }
+    .btn-c { @apply text-f22 pt-6 pb-12; }
+    .btn-lg { @apply text-f22 pt-17 pb-21 min-w-367; }
+    .btn-md { @apply text-f18; }
+    .btn-sm { @apply font-medium text-f16 py-7; }
+}
 
 @media (min-width: theme('screens.md')) {
     .hover-border:after { content: ''; }
 
-    .btn-lg { @apply text-f22 pt-17 pb-21 min-w-367; }
 
     .list-tick li { @apply pl-60 }
     .list-tick li:before { @apply -ml-60 }
+
+    .input { @apply px-33; }
 }
 
 @media (max-width: 1023px) {

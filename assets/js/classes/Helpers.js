@@ -1,6 +1,7 @@
 import '../global.js'
 import 'jquery-match-height'
 import 'slick-carousel'
+import 'picturefill'
 
 export const MobileNav = () => {
     var navopener = $('.js-nav-opener'),
@@ -118,6 +119,55 @@ export const SlickCarousel = () => {
         prevArrow: '<a href="#" class="slick-prev icon-chevron-left"></a>',
         nextArrow: '<a href="#" class="slick-next icon-chevron-right"></a>',
     });
+
+
+    var win = jQuery(window);
+    jQuery('[data-slick-mobile]').each(function() {
+        var holder = jQuery(this);
+        var holderClasses = holder.attr('class');
+        var holderHtml = holder.html();
+        var mode = null;
+        
+        var refresh = function() {
+            switch(mode) {
+                case 'desktop':
+                holder.attr('class',holderClasses)
+                .html(holderHtml);
+                break;
+                case 'mobile':
+                holder.slick({
+                    slidesToScroll: 1,
+                    rows: 0,
+                    arrows: true,
+                    dots: true,
+                    adaptiveHeight: true,
+                    infinite: true,
+                    // autoplay: true,
+                    autoplaySpeed: 2000,
+                    prevArrow: '<a href="#" class="slick-prev icon-chevron-left"></a>',
+                    nextArrow: '<a href="#" class="slick-next icon-chevron-right"></a>',
+                });
+                break;
+            }
+        };
+        var resizeHandler = function() {
+            if (window.innerWidth > 767) {
+                if (mode !== 'desktop') {
+                    mode = 'desktop';
+                    refresh();
+                }
+                initSameHeight();
+            } else {
+                if (mode !== 'mobile') {
+                    mode = 'mobile';
+                    refresh();
+                }
+            }
+        };
+        win.on('resize orientationchange', resizeHandler);
+        resizeHandler();
+    });
+    jQuery('[data-slick-mobile]').on( 'touchend touchcancel touchmove', function() { jQuery(this).slick('slickPlay'); } );
 }
 
 export const Help = () => {
@@ -133,6 +183,29 @@ export const Help = () => {
             $('body').find('.js-help-block').removeClass('opacity-0 invisible').addClass('opacity-100 visible');
             $('body').addClass('cart-active');
             $(this).addClass('active');
+        }
+    });
+}
+
+export const Modal = () => {
+    $('[data-modal]').on('click', function() {
+        $('body').addClass('modal-active');
+        $('.modal').removeClass('show');
+        $($(this).attr('href')).addClass('show');
+        return false;
+    });
+
+    jQuery('.modal .close').click(function(e) {
+        e.preventDefault();
+        $('body').removeClass('modal-active');
+        $('.modal').removeClass('show');
+    });
+
+    jQuery('html').on('click touchstart pointerdown MSPointerDown', function(e) {
+        var target = jQuery(e.target);
+        if(!target.closest('.modal-box').length) {
+            $('body').removeClass('modal-active');
+            $('.modal').removeClass('show');
         }
     });
 }

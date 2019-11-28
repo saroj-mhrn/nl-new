@@ -15,8 +15,8 @@ module.exports = {
         '100a50': 'rgba(112,112,112,.5)',
         200: '#f7f7f7',
         300: '#dedede',
-        400: '#707070',
-        500: '#707070',
+        400: '#727272',
+        500: '#6E6E6E',
       },
       green: {
         100: '#3ba927',
@@ -28,9 +28,17 @@ module.exports = {
         600: '#009654',
         700: '#65B031', // light green for hover
         800: '#89C727', // lighter green
+        900: '#1BAF00',
       },
       orange: {
         100: '#F36A10',
+      },
+      red: {
+        100: '#FF6767',
+        200: '#d84d32'
+      },
+      blue: {
+        100: '#3b589d'
       }
     },
     spacingNegative: { // only for negative marging
@@ -489,26 +497,42 @@ module.exports = {
       '199': '199px',
       '200': '200px',
       '201': '201px',
+      '210': '210px',
       '217': '217px',
+      '222': '222px',
       '226': '226px',
+      '230': '230px',
       '240': '240px',
+      '247': '247px',
+      '250': '250px',
       '260': '260px',
       '268': '268px',
       '300': '300px',
+      '324': '324px',
       '344': '344px',
+      '347': '347px',
       '367': '367px',
       '400': '400px',
+      '412': '412px',
       '476': '476px',
+      '482': '482px',
       '500': '500px',
       '520': '520px',
       '544': '544px',
       '580': '580px',
       '600': '600px',
       '630': '630px',
+      '650': '650px',
       '670': '670px',
+      '869': '869px',
+      '900': '900px',
+      '951': '951px',
       '1060': '1060px',
       '1180': '1180px',
+      '1235': '1235px',
+      '1290': '1290px',
       '1400': '1400px',
+      '1468': '1468px',
       '1645': '1645px',
       '1920': '1920px',
     },
@@ -662,7 +686,7 @@ module.exports = {
       '12/12': '100%',
     },
     screens: {
-      xs: '540px',
+      xs: '375px', // before 540
       sm: '768px',
       md: '1024px',
       lg: '1280px',
@@ -821,13 +845,16 @@ module.exports = {
       relaxed: 1.625,
       body: 1.875,
       loose: 2,
+      z93: 0.93,
       a04: 1.04,
       a12: 1.12,
       a13: 1.13,
       a14: 1.14,
       a17: 1.17,
       a27: 1.27,
+      a33: 1.33,
       a35: 1.35,
+      a38: 1.38,
       a44: 1.44,
       a6: 1.6,
     },
@@ -886,6 +913,7 @@ module.exports = {
       9: '9px',
       10: '10px',
       15: '15px',
+      20: '20px',
       25: '25px',
       30: '30px',
       50: '50px',
@@ -912,7 +940,9 @@ module.exports = {
       ...theme('spacing'),
       ...theme('spacingPercent'),
       screen: '100vh',
-      'c67': 'calc(100% - 67px)'
+      'c67': 'calc(100% - 67px)',
+      'screen-47': 'calc(100vh - 47px)',
+      'screen-94': 'calc(100vh - 94px)',
     }),
     minWidth: theme => ({
       auto: 'auto',
@@ -975,6 +1005,7 @@ module.exports = {
       s1: '0 0 6px rgba(0,0,0,0.16)',
       s2: '0 0 70px 156px rgba(255,255,255,.9)',
       s3: '0 0 12px rgba(0,0,0,.14)',
+      s4: '0 3px 3px rgba(0,0,0,.16)',
     },
     zIndex: {
       auto: 'auto',
@@ -1000,6 +1031,7 @@ module.exports = {
     opacity: {
       '0': '0',
       '25': '.25',
+      '30': '.3',
       '40': '.4',
       '50': '.5',
       '60': '.6',
@@ -1060,6 +1092,7 @@ module.exports = {
       'yf': 'translateY(100%)',
       'y0': 'translateY(0)',
       'x0': 'translateX(0)',
+      'x31': 'translateX(31px)',
     },
     rotate: {
       '0': '0deg',
@@ -1152,10 +1185,16 @@ module.exports = {
         },
         '.table-foot': {
           display: 'table-footer-group'
-        }
+        },
+        '.col-count-2': {
+          columnCount: 2
+        },
+        '.col-count-3': {
+          columnCount: 3
+        },
       }
 
-      addUtilities(newUtilities)
+      addUtilities(newUtilities, ['responsive'])
     },
 
     function({ addUtilities, theme, e, variants }) {

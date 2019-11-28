@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurture Life</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/cup3rmi.css">
+    <link rel="stylesheet" href="assets/compiled/css/app.css">
+</head>
+<body>
+    <div class="w-full overflow-hidden relative pt-47 sm:pt-66 md:pt-94">
+        <header class="bg-white md:pt-20 z-99 fixed top-0 left-0 right-0 font-bold text-lg shadow-s1">
+            <div class="container">
+                <!-- mobile header -->
+                <div class="flex items-center justify-between md:hidden py-10 sm:py-15">
+                    <a href="/" class="block w-139 sm:w-201 p-4"><img src="assets/images/nurture-life-m.svg" alt="Nurture Life"></a>
+                    <a href="#" class="js-nav-opener icon-menu text-f18 sm:text-f22 text-green-600 hover:text-green-700"></a>
+                </div>
+
+                <nav class="js-nav fixed md:static right-0 top-0 bottom-0 md:flex md:items-start md:justify-between bg-white w-300 md:w-auto shadow-s1 md:shadow-none py-50 md:py-0 transition md:overflow-y-none">
+                    <a href="#" class="js-nav-opener icon-close text-f20 text-green-400 hover:text-green-700 md:hidden absolute top-20 right-20"></a>
+                    <ul class="md:flex md:items-center md:-mx-13">
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Menus</a></li>
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">How It Works</a></li>
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Nutrition</a></li>
+                    </ul>
+                    <a href="/" class="hidden md:block absolute top-50p left-50p translate-c w-268 p-9"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
+                    <ul class="md:flex md:items-center md:-mx-13">
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Knowledge Center</a></li>
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Gifts</a></li>
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="bg-gray-200 shadow-s1">
+                <div class="container xl:max-w-1468 flex items-center justify-between">
+                    <a href="#" class="inline-flex items-center font-bold text-f18 text-gray-100 hover:text-green-100 p-8 -ml-8">
+                        <img src="/assets/images/nick.png" alt="" class="rounded-full w-33 h-33 mr-16">
+                        <span>Hello, Nick!</span>
+                    </a>
+
+                    <ul class="md:flex md:items-center md:-mx-13 font-bold text-lg">
+                        <li class="lg:mr-20 active"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Orders</a></li>
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Account</a></li>
+                    </ul>
+
+                    <a href="#" class="btn btn-white text-f18 pt-5 pb-8">Log Out</a>
+                </div>
+            </div>
+
+            <div class="container xl:max-w-1468">
+                <div class="mb-33">
+                    <h2 class="font-bold text-f18 leading-tight pt-18 pb-13">Featured Items</h2>
+
+                    <div class="js-slide">
+                        <div class="shadow-s1 rounded-10">
+                            <div class="bg-cover bg-no-repeat h-247 rounded-t-10" style="background-image: url('/assets/images/hero-img01.jpg');"></div>
+                            <div class="relative bg-white pt-14 px-30 pb-29 rounded-b-10 text-f22 leading-tight">
+                                <strong class="block font-bold mb-3">Try our new Fruit Bites snack pouches!</strong>
+                                <p>$4.95/pouch, 5 bags per pouch. Allergen safe & only 5 grams of sugar per serving!</p>
+                                <div class="absolute top-0 right-145 translate-yhn">
+                                    <a href="#" class="btn pt-10 pb-13 min-w-217">Add to Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-23 mb-40">
+                    <div class="w-37p px-23">
+                        <h2 class="font-bold text-f18 leading-tight mb-16">My Orders</h2>
+                        
+                        <ul class="mb-31">
+                            <li class="mb-14">
+                                <!-- active state classes change: border-white to border-green-200 and translate-x21 -->
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-green-200 translate-x31">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">21</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">28</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <!-- skipped state classes change: text-green-200 to text-red-100 and bg-green-200 to bg-red-100 -->
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-red-100 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-red-100 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">5</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-red-100 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-red-100 font-bold mt-2 mb-5">Skipped</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">12</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">19</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">21</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">28</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <!-- skipped state classes change: text-green-200 to text-red-100 and bg-green-200 to bg-red-100 -->
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-red-100 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-red-100 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">5</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-red-100 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-red-100 font-bold mt-2 mb-5">Skipped</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">12</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">19</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">21</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-14">
+                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
+                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                        <div class="uppercase text-f19 -mb-3">jun</div>
+                                        <div class="text-f38">28</div>
+                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                    </div>
+
+                                    <div class="w-68 pt-5 relative ml-15">
+                                        <img src="/assets/images/box.svg" width="54" alt="">
+                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#" class="text-gray-100a50 text-f8 hover:text-green-100 font-bold text-f14">
+                                <span>Load More</span>
+                                <i class="icon-chevron-down text-f8 ml-6 -mt-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-63p px-23">
+                        <h2 class="font-bold text-f18 leading-tight mb-16">My Orders</h2>
+
+                        <div class="shadow-s1 rounded-10 transition cursor-pointer px-15 pt-24 pb-32">
+                            <div class="flex pb-26 mb-4 border-b border-gray-100a20">
+                                <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
+                                    <div class="uppercase text-f19 -mb-3">jun</div>
+                                    <div class="text-f38">21</div>
+                                    <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
+                                </div>
+
+                                <div class="flex-1">
+                                    <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
+                                    <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
+                                </div>
+
+                                <div class="relative ml-15 mr-9">
+                                    <a href="#" class="btn font-medium py-12 min-w-150">Menus<i class="icon-chevron-right absolute top-50p translate-yhn right-20 text-f13"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="flex border-b border-gray-100a20 pt-20 pl-13 pb-22">
+                                <div class="rounded-10 w-141 mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
+                                <div class="flex-1 py-2 pr-10">
+                                    <a href="#" class="icon-close float-right ml-15 pb-15 text-gray-100 text-f13 hover:text-green-100"></a>
+                                    <h4 class="font-medium text-base leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes & Green Beans</h4>
+                                    <span class="block text-green-100 font-medium text-f14 leading-a13 mb-27">Kid Meal</span>
+
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
+                                            <div class="bg-gray-200 rounded-30 pt-3 pb-7 px-4 w-87 font-bold text-f14 leading-normal text-center mx-7">Qty: 1</div>
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                        </div>
+
+                                        <div class="pl-20">
+                                            <span class="font-medium text-f14 leading-none">$17.90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-gray-100a20 pt-20 pl-13 pb-22">
+                                <div class="rounded-10 w-141 mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
+                                <div class="flex-1 py-2 pr-10">
+                                    <a href="#" class="icon-close float-right ml-15 pb-15 text-gray-100 text-f13 hover:text-green-100"></a>
+                                    <h4 class="font-medium text-base leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes & Green Beans</h4>
+                                    <span class="block text-green-100 font-medium text-f14 leading-a13 mb-27">Kid Meal</span>
+
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
+                                            <div class="bg-gray-200 rounded-30 pt-3 pb-7 px-4 w-87 font-bold text-f14 leading-normal text-center mx-7">Qty: 1</div>
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                        </div>
+
+                                        <div class="pl-20">
+                                            <span class="font-medium text-f14 leading-none">$17.90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-gray-100a20 pt-20 pl-13 pb-22">
+                                <div class="rounded-10 w-141 mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
+                                <div class="flex-1 py-2 pr-10">
+                                    <a href="#" class="icon-close float-right ml-15 pb-15 text-gray-100 text-f13 hover:text-green-100"></a>
+                                    <h4 class="font-medium text-base leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes & Green Beans</h4>
+                                    <span class="block text-green-100 font-medium text-f14 leading-a13 mb-27">Kid Meal</span>
+
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
+                                            <div class="bg-gray-200 rounded-30 pt-3 pb-7 px-4 w-87 font-bold text-f14 leading-normal text-center mx-7">Qty: 1</div>
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                        </div>
+
+                                        <div class="pl-20">
+                                            <span class="font-medium text-f14 leading-none">$17.90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-gray-100a20 pt-20 pl-13 pb-22">
+                                <div class="rounded-10 w-141 mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
+                                <div class="flex-1 py-2 pr-10">
+                                    <a href="#" class="icon-close float-right ml-15 pb-15 text-gray-100 text-f13 hover:text-green-100"></a>
+                                    <h4 class="font-medium text-base leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes & Green Beans</h4>
+                                    <span class="block text-green-100 font-medium text-f14 leading-a13 mb-27">Kid Meal</span>
+
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
+                                            <div class="bg-gray-200 rounded-30 pt-3 pb-7 px-4 w-87 font-bold text-f14 leading-normal text-center mx-7">Qty: 1</div>
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                        </div>
+
+                                        <div class="pl-20">
+                                            <span class="font-medium text-f14 leading-none">$17.90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-gray-100a20 pt-20 pl-13 pb-22">
+                                <div class="rounded-10 w-141 mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
+                                <div class="flex-1 py-2 pr-10">
+                                    <a href="#" class="icon-close float-right ml-15 pb-15 text-gray-100 text-f13 hover:text-green-100"></a>
+                                    <h4 class="font-medium text-base leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes & Green Beans</h4>
+                                    <span class="block text-green-100 font-medium text-f14 leading-a13 mb-27">Kid Meal</span>
+
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
+                                            <div class="bg-gray-200 rounded-30 pt-3 pb-7 px-4 w-87 font-bold text-f14 leading-normal text-center mx-7">Qty: 1</div>
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                        </div>
+
+                                        <div class="pl-20">
+                                            <span class="font-medium text-f14 leading-none">$17.90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-gray-100a20 pt-20 pl-13 pb-22">
+                                <div class="rounded-10 w-141 mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
+                                <div class="flex-1 py-2 pr-10">
+                                    <a href="#" class="icon-close float-right ml-15 pb-15 text-gray-100 text-f13 hover:text-green-100"></a>
+                                    <h4 class="font-medium text-base leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes & Green Beans</h4>
+                                    <span class="block text-green-100 font-medium text-f14 leading-a13 mb-27">Kid Meal</span>
+
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
+                                            <div class="bg-gray-200 rounded-30 pt-3 pb-7 px-4 w-87 font-bold text-f14 leading-normal text-center mx-7">Qty: 1</div>
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                        </div>
+
+                                        <div class="pl-20">
+                                            <span class="font-medium text-f14 leading-none">$17.90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-gray-100a20 pt-20 pl-13 pb-22">
+                                <div class="rounded-10 w-141 mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
+                                <div class="flex-1 py-2 pr-10">
+                                    <a href="#" class="icon-close float-right ml-15 pb-15 text-gray-100 text-f13 hover:text-green-100"></a>
+                                    <h4 class="font-medium text-base leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes & Green Beans</h4>
+                                    <span class="block text-green-100 font-medium text-f14 leading-a13 mb-27">Kid Meal</span>
+
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
+                                            <div class="bg-gray-200 rounded-30 pt-3 pb-7 px-4 w-87 font-bold text-f14 leading-normal text-center mx-7">Qty: 1</div>
+                                            <a href="#" class="w-32 h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                        </div>
+
+                                        <div class="pl-20">
+                                            <span class="font-medium text-f14 leading-none">$17.90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-gray-100a20 -mt-1 py-23 px-11">
+                                <table class="w-full">
+                                    <tr>
+                                        <td>Sales Tax:</td>
+                                        <td class="text-right">$1.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping:</td>
+                                        <td class="text-right">$12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discount:</td>
+                                        <td class="text-right">15% Off (Code: 15OFF)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>New Subtotal:</td>
+                                        <td class="text-right">
+                                            <span class="font-medium leading-none line-through">$18.95</span>
+                                            <span class="text-green-100 font-bold leading-none">$16.50</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="flex py-2 px-11 -mx-10">
+                                <div class="w-1/2 px-10">
+                                    <div class="relative group">
+                                        <a href="#" class="block bg-gray-200 text-gray-100 group-hover:bg-green-700 group-hover:text-white rounded-30 px-58 pt-12 pb-13 text-center">
+                                            <span>Shipping to: <strong>12345 Main St, Chicago, IL</strong></span>
+                                            <i class="icon-chevron-down absolute top-50p right-36 translate-yhn text-f7"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-1/2 px-10">
+                                    <a href="#" class="btn btn-gray w-full font-medium pt-11 pb-12">Skip Week</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/compiled/js/app.js"></script>
+</body>
+</html>
