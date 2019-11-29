@@ -138,11 +138,30 @@ export const SlickCarousel = () => {
         asNavFor: '.js-fade-slider'
     });
 
-    $('.js-slider').slick({
+    const settings = {
         slidesToShow: 3,
         slidesToScroll: 3,
         prevArrow: '<a href="#" class="slick-prev icon-chevron-left"></a>',
         nextArrow: '<a href="#" class="slick-next icon-chevron-right"></a>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: "unslick"
+            }
+        ]
+    }
+    const sl =  $('.js-slider-desktop').slick(settings);
+    $(window).on('resize', function() {
+       if( $(window).width() > 767 &&  !sl.hasClass('slick-initialized')) {
+             $('.js-slider-desktop').slick(settings);
+        }
     });
 
 
