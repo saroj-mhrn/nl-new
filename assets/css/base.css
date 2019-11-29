@@ -5,6 +5,8 @@ body { @apply text-base; }
 
 h1 { @apply text-4xl; }
 
+a, button, input { @apply outline-none !important; }
+
 a, button { transition: color 0.3s ease-in, background-color 0.3s ease-in, border 0.3s ease-in, opacity 0.3s ease-in; }
 
 input + .icon-check:before { @apply opacity-0 transition; }
@@ -41,6 +43,15 @@ input:checked + .icon-check:before { @apply opacity-100; }
 .modal-box { @apply opacity-0 invisible transition; }
 .modal-active .modal,
 .modal-active .modal-box.show { @apply opacity-100 visible; }
+
+.dropdown.active { @apply opacity-100 visible; }
+.dropdown:before { content:''; background: linear-gradient(to bottom, rgba(112,112,112,0.15) 0%,rgba(112,112,112,0) 100%); @apply h-5 absolute left-0 right-0 top-0  }
+
+.bg-stretch { @apply bg-cover bg-center bg-no-repeat absolute left-0 top-0 bottom-0 right-0 -z-1; }
+
+.search-drop.active { @apply w-300; }
+
+.hidden.current { @apply block; }
 
 @media (max-width: 767px) {
     .btn { @apply text-f14 py-9 min-w-199; }

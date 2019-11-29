@@ -2,6 +2,8 @@ import '../global.js'
 import 'jquery-match-height'
 import 'slick-carousel'
 import 'picturefill'
+import '../plugins/retinacover.js'
+import Popper from 'popper.js'
 
 export const MobileNav = () => {
     var navopener = $('.js-nav-opener'),
@@ -15,12 +17,12 @@ export const MobileNav = () => {
 
     $('.js-nav ul li').each(function() {
         var item = $(this);
-        var drop = item.find('ul');
+        var drop = item.find('ul, .dropdown');
         var link = item.find('a').eq(0);
         if(drop.length) {
             item.addClass('hasdrop');
-            drop.attr('data-more-content', '');
-            if(link.length) link.addClass('hasdrop-a').attr({'data-more': '', 'data-outside': ''});
+            drop.addClass('dropdown');
+            if(link.length) link.addClass('hasdrop-a').attr({'data-opener': '', 'data-outside': ''});
         }
     });
 
@@ -34,23 +36,41 @@ export const MobileNav = () => {
             $('body').removeClass(navactive);
         }
 
-        if(!(target.closest('[data-outside]').length) && !(target.closest('[data-outside] + [data-more-content]').length)) {
-            $('[data-outside]').removeClass('active').next('[data-more-content]').slideUp(200);
+        if(!(target.closest('[data-outside]').length) && !(target.closest($('[data-outside]').next()).length)) {
+            $('[data-outside]').removeClass('active').next().removeClass('active');
         }
     });
 }
 
 export const OpenClose = () => {
-    $('[data-more]').next('[data-more-content]').hide();
-
-    $('[data-more]').click(function(e) {
+    $('[data-opener]').click(function(e) {
         e.preventDefault();
-        // $('[data-more]').not(this).removeClass('active').next('[data-more-content]').slideUp(200);
-        $(this).hasClass('active') ? $(this).removeClass('active').next('[data-more-content]').slideUp(200) : $(this).addClass('active').next('[data-more-content]').slideToggle(200);
+        var el = $(this);
+        el.hasClass('active') ? el.removeClass('active').next().removeClass('active') : el.addClass('active').next().addClass('active');
+
+        if(el.next('.dropdown').length) {
+            setTimeout(function() {
+                var popper = new Popper(el.parent(),(el.next('.dropdown')),{
+                    placement: 'top'
+                });
+            }, 90)
+        }
+
+        if(el.next().find('input').length) {
+            el.next().find('input').focus();
+        }
     })
 
-    $('[data-outside] + [data-more-content]').find('a:not(.hasdrop-a)').click(function() {
-        $('[data-outside]').removeClass('active').next('[data-more-content]').slideUp(200);
+    $('[data-outside]').next().find('a:not(.hasdrop-a)').click(function() {
+        $('[data-outside]').removeClass('active');
+    })
+
+    $('[data-id-toggle]').click(function(e){
+        e.preventDefault();
+        var tab_id = $(this).attr('href');
+
+        $(this).toggleClass('current');
+        $(tab_id).toggleClass('current');
     })
 }
 
@@ -156,7 +176,7 @@ export const SlickCarousel = () => {
                     mode = 'desktop';
                     refresh();
                 }
-                initSameHeight();
+                MatchHeight();
             } else {
                 if (mode !== 'mobile') {
                     mode = 'mobile';
@@ -208,4 +228,8 @@ export const Modal = () => {
             $('.modal').removeClass('show');
         }
     });
+}
+
+export const BgStretch = () => {
+    $('[data-bg]').retinaCover();
 }

@@ -11,6 +11,7 @@ module.exports = {
       black: '#000',
       gray: {
         100: '#707070',
+        '100a10': 'rgba(112,112,112,.1)',
         '100a20': 'rgba(112,112,112,.2)',
         '100a50': 'rgba(112,112,112,.5)',
         200: '#f7f7f7',
@@ -29,6 +30,7 @@ module.exports = {
         700: '#65B031', // light green for hover
         800: '#89C727', // lighter green
         900: '#1BAF00',
+        1000: '#9ED840',
       },
       orange: {
         100: '#F36A10',
@@ -687,7 +689,7 @@ module.exports = {
       '12/12': '100%',
     },
     screens: {
-      xs: '375px', // before 540
+      xs: '375px',
       sm: '768px',
       md: '1024px',
       lg: '1280px',

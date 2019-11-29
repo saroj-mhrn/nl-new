@@ -10,93 +10,134 @@
 </head>
 <body>
     <div class="w-full overflow-hidden relative pt-47 sm:pt-66 md:pt-94">
-        <header class="bg-white md:pt-20 z-99 fixed top-0 left-0 right-0 font-bold text-lg shadow-s1">
-            <div class="container">
-                <!-- mobile header -->
-                <div class="flex items-center justify-between md:hidden py-10 sm:py-15">
-                    <a href="/" class="block w-139 sm:w-201 p-4"><img src="assets/images/nurture-life-m.svg" alt="Nurture Life"></a>
-                    <a href="#" class="js-nav-opener icon-menu text-f18 sm:text-f22 text-green-600 hover:text-green-700"></a>
-                </div>
+        <header class="bg-white md:pt-20 z-99 fixed top-0 left-0 right-0 font-bold text-lg md:shadow-s1">
+            <!-- mobile header -->
+            <div class="flex items-center justify-between md:hidden px-17 sm:px-24 py-9 sm:py-15 bg-white relative z-2 shadow-s1">
+                <a href="/" class="block w-149 sm:w-201 p-4 -ml-4"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
+                <a href="#" class="js-nav-opener icon-menu text-f16 sm:text-f22 text-green-600 hover:text-green-700"></a>
+            </div>
 
-                <nav class="js-nav fixed md:static right-0 top-0 bottom-0 md:flex md:items-start md:justify-between bg-white w-300 md:w-auto shadow-s1 md:shadow-none py-50 md:py-0 transition md:overflow-y-none">
-                    <a href="#" class="js-nav-opener icon-close text-f20 text-green-400 hover:text-green-700 md:hidden absolute top-20 right-20"></a>
-                    <ul class="md:flex md:items-center md:-mx-13">
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Menus</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">How It Works</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Nutrition</a></li>
-                    </ul>
-                    <a href="/" class="hidden md:block absolute top-50p left-50p translate-c w-268 p-9"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
-                    <ul class="md:flex md:items-center md:-mx-13">
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Knowledge Center</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Gifts</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Contact</a></li>
-                    </ul>
+            <div class="container">
+                <nav class="js-nav fixed md:static right-0 top-46 sm:top-66 bottom-0 bg-white w-250 sm:w-300 md:w-auto shadow-s1 md:shadow-none py-28 px-25 md:p-0 transition md:overflow-y-none text-center md:text-left">
+                    <div class="table w-full h-full md:block md:w-auto md:h-auto">
+                        <div class="table-cell md:flex md:items-start md:justify-between">
+                            <ul class="md:flex md:items-center md:-mx-13">
+                                <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 md:text-gray-100 hover:text-green-100 hover-border">Menus</a></li>
+                                <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 md:text-gray-100 hover:text-green-100 hover-border">How It Works</a></li>
+                                <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 md:text-gray-100 hover:text-green-100 hover-border">Nutrition</a></li>
+                            </ul>
+                            <a href="/" class="hidden md:block absolute top-50p left-50p translate-c w-268 p-9"><img src="assets/images/nurture-life.svg" alt="Nurture Life"></a>
+                            <ul class="md:flex md:items-center md:-mx-13">
+                                <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 md:text-gray-100 hover:text-green-100 hover-border">Knowledge Center</a></li>
+                                <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 md:text-gray-100 hover:text-green-100 hover-border">Gifts</a></li>
+                                <li class="relative mb-22 md:mb-0 lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-green-900 md:text-gray-100 hover:text-green-100 hover-border">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="table-foot md:hidden">
+                            <a href="#" class="btn btn-green w-full px-28 pt-6 pb-7">
+                                Sign up
+                                <img src="/assets/images/img-duck-r.png" class="absolute w-69 left-2 bottom-0" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
 
         <main>
-            <section class="js-will-blur relative z-1 overflow-hidden pt-109 pb-89 bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/hero-menu.jpg');">
-                <div class="absolute top-0 left-0 bottom-0 w-43p bg-white rounded-full -z-1 shadow-s2"></div>
+            <section class="js-will-blur relative z-1 overflow-hidden text-center sm:text-left pt-24 sm:pt-109 pb-24 sm:pb-89">
+                <div data-bg class="bg-stretch">
+                    <span data-srcset="/assets/images/hero-menu-mb.jpg, /assets/images/hero-menu-mb@2x.jpg 2x"></span>
+                    <span data-srcset="/assets/images/hero-menu.jpg, /assets/images/hero-menu.jpg 2x" data-media="(min-width: 768px)"></span>
+                </div>
+                <div class="hidden sm:block absolute top-0 left-0 bottom-0 w-43p bg-white rounded-full -z-1 shadow-s2"></div>
                 <div class="container">
                     <div class="max-w-670">
-                        <h1 class="font-black text-f50 md:text-f70 leading-a14 text-green-100 mb-14">Meals & Snacks for the Whole Family!</h1>
-                        <p class="text-f22 leading-a35 mb-30">All of our meals and snacks are made with love and super good ingredients. Sort below based on age, dietary preferences, allergens and type of eater!</p>
+                        <h1 class="font-black text-f30 sm:text-f50 md:text-f70 leading-a14 text-green-100 mb-6 sm:mb-14">
+                            <!-- mobile title -->
+                            <span class="sm:hidden">Our Meals</span>
+                            <!-- desktop title -->
+                            <span class="hidden sm:inline">Meals & Snacks for the Whole Family!</span>
+                        </h1>
+                        <p class="text-base sm:text-f22 leading-medium sm:leading-a35 mb-11 sm:mb-30">
+                            <!-- mobile desc -->
+                            <span class="sm:hidden">Freshly made, seasonal meals, designed by pediatric dietitians & chefs</span>
+                            <!-- desktop desc -->
+                            <span class="hidden sm:inline">All of our meals and snacks are made with love and super good ingredients. Sort below based on age, dietary preferences, allergens and type of eater!</span>
+                        </p>
                     </div>
                 </div>
             </section>
 
             <nav class="bg-gray-200">
-                <div class="container flex items-start">
-                    <div class="-ml-25 mr-24">
-                        <button class="block px-18 py-26 icon-search text-gray-100 hover:text-green-100 text-f23 leading-none"></button>
+                <div class="container px-0 sm:px-25">
+                    <div class="overflow-y-auto md:ml-50">
+                        <ul class="table w-full min-2-500 whitespace-no-wrap sm:font-bold text-center text-f14 md:text-f18 xl:text-f22 -mr-25">
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">All Items</a></li>
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Babies</a></li>
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Toddlers</a></li>
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Kids</a></li>
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Cold Lunches</a></li>
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Family Meals</a></li>
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Snacks</a></li>
+                            <li class="table-cell"><a href="#" class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Desserts</a></li>
+                        </ul>
                     </div>
-                    <ul class="flex-1 flex flex-wrap font-bold text-center text-f18 md:text-f22 -mr-25">
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">All Items</a></li>
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Babies</a></li>
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Toddlers</a></li>
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Kids</a></li>
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Cold Lunches</a></li>
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Family Meals</a></li>
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Snacks</a></li>
-                        <li class="flex flex-1"><a href="#" class="block w-full px-24 md:px-16 lg:px-24 py-10 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border">Desserts</a></li>
-                    </ul>
                 </div>
             </nav>
 
-            <div class="container">
-                <ul class="flex border-b border-gray-100a20 py-26 -mx-21 mb-30">
-                    <li class="w-1/3 px-21">
-                        <div class="relative group">
-                            <a href="#" class="block bg-gray-200 group-hover:bg-gray-100 group-hover:text-white rounded-30 px-58 pt-10 pb-14 text-center">
-                                <i class="icon-caret-down absolute top-50p left-36 translate-yhn text-f7"></i>
-                                <span>Egg Free, Soy Free, Sesame Free</span>
-                            </a>
-                            <a href="#" class="icon-close absolute top-50p right-20 translate-yhn text-f13 group-hover:text-white"></a>
+            <div class="container px-11 sm:px-25">
+                <div class="relative mt-13 sm:mt-31 md:mt-0 mb-16 sm:mb-31">
+                    <div class="flex">
+                        <div class="md:absolute md:bottom-full md:-left-16 flex-1">
+                            <button data-opener data-outside class="hidden md:block px-18 pt-26 pb-26 icon-search text-gray-100 hover:text-green-100 text-f23 leading-none"></button>
+                            <div class="search-drop md:transition md:w-0 md:overflow-hidden md:absolute md:left-full md:bottom-0 w-full flex md:block">
+                                <button class="icon-search bg-gray-100a20 rounded-l-30 w-50 h-35 pl-6"></button>
+                                <input type="search" class="bg-gray-200 w-full md:h-72 xl:h-77 text-f16 md:border md:border-gray-100 text-base rounded-r-30 md:rounded-none md:text-f18 px-20 py-4 md:px-30 md:py-20 flex-1">
+                            </div>
                         </div>
-                    </li>
-                    <li class="w-1/3 px-21">
-                        <ul class="flex rounded-30 overflow-hidden text-center">
-                            <li class="flex-1"><a href="#" class="block bg-gray-200 hover:bg-gray-100 hover:text-white px-20 pt-11 pb-14">Picky Eater</a></li>
-                            <li class="flex-1"><a href="#" class="block bg-gray-200 hover:bg-gray-100 hover:text-white px-20 pt-11 pb-14">Favorites</a></li>
-                            <li class="flex-1"><a href="#" class="block bg-gray-200 hover:bg-gray-100 hover:text-white px-20 pt-11 pb-14">Adventurous</a></li>
-                        </ul>
-                    </li>
-                    <li class="w-1/3 px-21">
-                        <div class="relative group">
-                            <a href="#" class="block bg-gray-200 group-hover:bg-gray-100 group-hover:text-white rounded-30 px-58 pt-10 pb-14 text-center">
-                                <i class="icon-caret-down absolute top-50p left-36 translate-yhn text-f7"></i>
-                                <span>Meat + Fish + Veggies</span>
-                            </a>
-                            <a href="#" class="icon-close absolute top-50p right-20 translate-yhn text-f13 group-hover:text-white"></a>
-                        </div>
-                    </li>
-                </ul>
+                        <a href="#filters" data-id-toggle class="icon-tune md:hidden ml-12 w-63 h-35 rounded-30 border-2 border-gray-100 flex items-center justify-center"></a>
+                    </div>
 
-                <ul class="js-will-blur flex flex-wrap -mx-17 mb-27">
-                    <li class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-17 mb-38">
+
+                    <div id="filters" class="hidden md:block">
+                        <ul class="flex flex-wrap md:border-b md:border-gray-100a20 pt-26 md:pb-14 -mx-6 xl:-mx-21">
+                            <li class="w-full xl:w-1/3 px-6 xl:px-21 mb-10 xl:order-2">
+                                <ul class="flex rounded-30 overflow-hidden text-center">
+                                    <li class="flex-1"><a href="#" class="block bg-gray-200 hover:bg-gray-100 hover:text-white px-20 pt-11 pb-14">Picky Eater</a></li>
+                                    <li class="flex-1"><a href="#" class="block bg-gray-200 hover:bg-gray-100 hover:text-white px-20 pt-11 pb-14">Favorites</a></li>
+                                    <li class="flex-1"><a href="#" class="block bg-gray-200 hover:bg-gray-100 hover:text-white px-20 pt-11 pb-14">Adventurous</a></li>
+                                </ul>
+                            </li>
+                            <li class="w-full md:w-1/2 xl:w-1/3 px-6 xl:px-21 mb-10 xl:order-1">
+                                <div class="relative group">
+                                    <a href="#" class="block bg-gray-200 group-hover:bg-gray-100 group-hover:text-white rounded-30 px-58 pt-10 pb-14 text-center">
+                                        <i class="icon-caret-down absolute top-50p left-36 translate-yhn text-f7"></i>
+                                        <span>Egg Free, Soy Free, Sesame Free</span>
+                                    </a>
+                                    <a href="#" class="icon-close absolute top-50p right-20 translate-yhn text-f13 group-hover:text-white"></a>
+                                </div>
+                            </li>
+                            <li class="w-full md:w-1/2 xl:w-1/3 px-6 xl:px-21 mb-10 xl:order-3">
+                                <div class="relative group">
+                                    <a href="#" class="block bg-gray-200 group-hover:bg-gray-100 group-hover:text-white rounded-30 px-58 pt-10 pb-14 text-center">
+                                        <i class="icon-caret-down absolute top-50p left-36 translate-yhn text-f7"></i>
+                                        <span>Meat + Fish + Veggies</span>
+                                    </a>
+                                    <a href="#" class="icon-close absolute top-50p right-20 translate-yhn text-f13 group-hover:text-white"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="js-will-blur flex flex-wrap -mx-6 sm:-mx-17 mb-27">
+                    <li class="w-full xs:w-1/2 md:w-1/3 lg:w-1/4 px-6 sm:px-17 mb-38">
                         <div class="rounded-10 overflow-hidden shadow text-center">
-                            <div class="relative bg-cover bg-center bg-no-repeat h-226" style="background-image: url('/assets/images/img02.jpg');">
+                            <div class="relative h-226">
+                                <div data-bg class="bg-stretch">
+                                    <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                </div>
                                 <!-- add button -->
                                 <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
                                     <a href="#" class="block relative w-45 h-45 rounded-full bg-green-300a2 hover:bg-green-700 hover:text-white text-green-400"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
@@ -118,11 +159,14 @@
                             <div class="js-h4 px-20 py-12 bg-gray-200 text-f14 leading-tight">Soy Free, Egg Free, Milk Free</div>
                         </div>
                     </li>
-                    <li class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-17 mb-38">
+                    <li class="w-full xs:w-1/2 md:w-1/3 lg:w-1/4 px-6 sm:px-17 mb-38">
                         <div class="rounded-10 overflow-hidden shadow text-center">
-                            <div class="relative bg-cover bg-center bg-no-repeat h-226" style="background-image: url('/assets/images/img03.jpg');">
+                            <div class="relative h-226">
+                                <div data-bg class="bg-stretch">
+                                    <span data-srcset="/assets/images/img03.jpg, /assets/images/img03@2x.jpg 2x"></span>
+                                </div>
                                 <!-- add button -->
-                                <a href="#" class="w-45 h-45 rounded-full bg-green-300 hover:bg-green-700 focus:outline-none text-white absolute top-full left-50p translate-c"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                <a href="#" class="w-45 h-45 rounded-full bg-green-300 hover:bg-green-700 text-white absolute top-full left-50p translate-c"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
                                 <!-- kid face icon -->
                                 <img src="/assets/images/picky-eater-fav.svg" class="absolute top-9 right-8 w-58" alt="Picky eater fav">
                                 <!-- new tag -->
@@ -138,11 +182,14 @@
                             <div class="js-h4 px-20 py-12 bg-gray-200 text-f14 leading-tight">Soy Free, Egg Free, Milk Free</div>
                         </div>
                     </li>
-                    <li class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-17 mb-38">
+                    <li class="w-full xs:w-1/2 md:w-1/3 lg:w-1/4 px-6 sm:px-17 mb-38">
                         <div class="rounded-10 overflow-hidden shadow text-center">
-                            <div class="relative bg-cover bg-center bg-no-repeat h-226" style="background-image: url('/assets/images/img04.jpg');">
+                            <div class="relative h-226">
+                                <div data-bg class="bg-stretch">
+                                    <span data-srcset="/assets/images/img04.jpg, /assets/images/img04@2x.jpg 2x"></span>
+                                </div>
                                 <!-- add button -->
-                                <a href="#" class="w-45 h-45 rounded-full bg-green-300 hover:bg-green-700 focus:outline-none text-white absolute top-full left-50p translate-c"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                <a href="#" class="w-45 h-45 rounded-full bg-green-300 hover:bg-green-700 text-white absolute top-full left-50p translate-c"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
                                 <!-- kid face icon -->
                                 <img src="/assets/images/picky-eater-fav.svg" class="absolute top-9 right-8 w-58" alt="Picky eater fav">
                                 <!-- new tag -->
@@ -158,11 +205,14 @@
                             <div class="js-h4 px-20 py-12 bg-gray-200 text-f14 leading-tight">Soy Free, Egg Free, Milk Free</div>
                         </div>
                     </li>
-                    <li class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-17 mb-38">
+                    <li class="w-full xs:w-1/2 md:w-1/3 lg:w-1/4 px-6 sm:px-17 mb-38">
                         <div class="rounded-10 overflow-hidden shadow text-center">
-                            <div class="relative bg-cover bg-center bg-no-repeat h-226" style="background-image: url('/assets/images/img05.jpg');">
+                            <div class="relative h-226">
+                                <div data-bg class="bg-stretch">
+                                    <span data-srcset="/assets/images/img05.jpg, /assets/images/img05@2x.jpg 2x"></span>
+                                </div>
                                 <!-- add button -->
-                                <a href="#" class="w-45 h-45 rounded-full bg-green-300 hover:bg-green-700 focus:outline-none text-white absolute top-full left-50p translate-c"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
+                                <a href="#" class="w-45 h-45 rounded-full bg-green-300 hover:bg-green-700 text-white absolute top-full left-50p translate-c"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
                                 <!-- kid face icon -->
                                 <img src="/assets/images/picky-eater-fav.svg" class="absolute top-9 right-8 w-58" alt="Picky eater fav">
                                 <!-- new tag -->
@@ -292,7 +342,7 @@
                     <p>Click to add / edit items and checkout! Click the cart icon to hide & show panel.</p>
                     <span class="anim-leftright w-51 h-51 rounded-full bg-green-800 hover:bg-green-700 text-white absolute left-full top-50p translate-c"><i class="icon-arrow-right absolute translate-c top-50p left-50p"></i></span>
                 </div>
-            
+
                 <div class="left-40p top-260 absolute shadow-s3 bg-white rounded-10 px-46 pt-24 pb-37 text-center text-f18 leading-a12 max-w-476">
                     <h3 class="font-bold text-f36 leading-a13 text-green-800 mb-11">Menu Categories</h3>
                     <p>We have food for all ages! Click on a category to see each menu.</p>

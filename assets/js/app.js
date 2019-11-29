@@ -11,4 +11,5 @@ $(document).ready(function($){
     Helper.SlickCarousel();
     Helper.Help();
     Helper.Modal();
+    Helper.BgStretch();
 });

@@ -88,3 +88,9 @@
 .icon-menu:before {
   content: "\e914";
 }
+.icon-tune:before {
+  content: "\e915";
+}
+.icon-google-plus:before {
+  content: "\e916";
+}
