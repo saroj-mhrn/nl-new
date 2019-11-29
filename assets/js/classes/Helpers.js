@@ -59,11 +59,11 @@ export const OpenClose = () => {
         if(el.next().find('input').length) {
             el.next().find('input').focus();
         }
-    })
+    });
 
     $('[data-outside]').next().find('a:not(.hasdrop-a)').click(function() {
         $('[data-outside]').removeClass('active');
-    })
+    });
 
     $('[data-id-toggle]').click(function(e){
         e.preventDefault();
@@ -71,7 +71,12 @@ export const OpenClose = () => {
 
         $(this).toggleClass('current');
         $(tab_id).toggleClass('current');
-    })
+    });
+
+    $('[data-cart-opener]').click(function(e){
+        e.preventDefault();
+        $('body').toggleClass('cart-active');
+    });
 }
 
 export const Tabs = () => {

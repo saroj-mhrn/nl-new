@@ -94,3 +94,12 @@
 .icon-google-plus:before {
   content: "\e916";
 }
+.icon-caret-left:before {
+  content: "\e917";
+}
+.icon-caret-right:before {
+  content: "\e918";
+}
+.icon-delete:before {
+  content: "\e919";
+}
