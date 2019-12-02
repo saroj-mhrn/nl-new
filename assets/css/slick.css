@@ -15,6 +15,10 @@
 .js-slider-desktop .slick-prev { @apply -left-30; }
 .js-slider-desktop .slick-next { @apply -right-30; }
 
+.js-slider-review .slick-arrow { @apply text-gray-100a20; }
+.js-slider-review .slick-prev { @apply left-0; }
+.js-slider-review .slick-next { @apply right-0; }
+
 .slick-arrow:hover { @apply text-green-700; }
 
 .slick-visible .slick-list { @apply overflow-visible !important; }

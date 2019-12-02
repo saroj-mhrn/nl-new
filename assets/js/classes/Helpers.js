@@ -80,7 +80,7 @@ export const OpenClose = () => {
 }
 
 export const Tabs = () => {
-    $('ul.tabs li').click(function(){
+    $('[data-tab]').click(function(){
         var tab_id = $(this).attr('data-tab');
 
         $(this).siblings().removeClass('current');
@@ -120,6 +120,24 @@ export const ImgReveal = () => {
 }
 
 export const SlickCarousel = () => {
+    $('.js-slider-review').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        prevArrow: '<a href="#" class="slick-prev icon-chevron-left"></a>',
+        nextArrow: '<a href="#" class="slick-next icon-chevron-right"></a>',
+    });
+
+    $('.js-slider-a').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        prevArrow: '<a href="#" class="slick-prev icon-chevron-left"></a>',
+        nextArrow: '<a href="#" class="slick-next icon-chevron-right"></a>',
+    });
+
     $('.js-fade-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

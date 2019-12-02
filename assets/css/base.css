@@ -18,7 +18,7 @@ input:checked + .icon-check:before { @apply opacity-100; }
 .hover-border:after { @apply absolute transition left-50p bottom-0 translate-xhn w-0 h-4 bg-green-100 rounded-10; }
 .hover-border:hover:after, .active .hover-border:after { @apply w-full; }
 
-.btn { @apply relative bg-green-200 text-white leading-snug px-40 inline-flex items-center justify-center outline-none rounded-50 font-bold text-base; }
+.btn { @apply relative bg-green-200 text-white leading-snug px-40 inline-flex items-center justify-center text-center outline-none rounded-50 font-bold text-base; }
 
 .btn-gray { @apply bg-gray-200 text-gray-100; }
 .btn-white { @apply bg-white text-gray-100a50; }
@@ -39,10 +39,8 @@ input:checked + .icon-check:before { @apply opacity-100; }
 
 .cart-active .cart-panel { @apply right-0; }
 
-.modal,
-.modal-box { @apply opacity-0 invisible transition; }
-.modal-active .modal,
-.modal-active .modal-box.show { @apply opacity-100 visible; }
+.modal { @apply opacity-0 invisible transition; }
+.modal-active .modal.show { @apply opacity-100 visible; }
 
 .dropdown.active { @apply opacity-100 visible; }
 .dropdown:before { content:''; background: linear-gradient(to bottom, rgba(112,112,112,0.15) 0%,rgba(112,112,112,0) 100%); @apply h-5 absolute left-0 right-0 top-0  }
@@ -52,6 +50,16 @@ input:checked + .icon-check:before { @apply opacity-100; }
 .search-drop.active { @apply w-300; }
 
 .hidden.current { @apply block; }
+
+.arrow-meal-left { @apply left-25 }
+.arrow-meal-right { @apply right-25 }
+
+.current.hidden { @apply block; }
+
+[data-tab].hover-border:after { content: ''; }
+.current.hover\:text-green-100 { @apply text-green-100; }
+[data-tab].current { @apply font-bold; }
+.current.hover-border:after { @apply w-full; }
 
 @media (max-width: 767px) {
     .btn { @apply text-f14 py-9 min-w-199; }
@@ -80,6 +88,11 @@ input:checked + .icon-check:before { @apply opacity-100; }
     .list-tick li:before { @apply -ml-60 }
 
     .input { @apply px-33; }
+}
+
+@media (min-width: 1700px) {
+    .arrow-meal-left { @apply left-4p }
+    .arrow-meal-right { @apply right-4p }
 }
 
 @media (max-width: 1023px) {

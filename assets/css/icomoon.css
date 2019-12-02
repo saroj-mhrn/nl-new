@@ -103,3 +103,9 @@
 .icon-delete:before {
   content: "\e919";
 }
+.icon-recycle:before {
+  content: "\e91a";
+}
+.icon-logout:before {
+  content: "\e91b";
+}
