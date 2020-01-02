@@ -9,24 +9,34 @@ a, button, input { @apply outline-none !important; }
 
 a, button { transition: color 0.3s ease-in, background-color 0.3s ease-in, border 0.3s ease-in, opacity 0.3s ease-in; }
 
+button[disabled] { @apply pointer-events-none; }
+
 input + .icon-check:before { @apply opacity-0 transition; }
 input:checked + .icon-check:before { @apply opacity-100; }
 
 .input { @apply w-full border border-gray-400 rounded-10 text-f16 leading-a17 outline-none appearance-none h-50 px-22 py-5 mb-14 text-gray-400; }
 
+.input-a { @apply border-gray-600 text-gray-600 px-18 pt-6 pb-10; }
+.input-b { @apply rounded-30 bg-gray-200 border-gray-200 px-18 pt-6 pb-10 h-35 text-f12; }
+
 .hover-border { @apply relative; }
 .hover-border:after { @apply absolute transition left-50p bottom-0 translate-xhn w-0 h-4 bg-green-100 rounded-10; }
 .hover-border:hover:after, .active .hover-border:after { @apply w-full; }
 
-.btn { @apply relative bg-green-200 text-white leading-snug px-40 inline-flex items-center justify-center text-center outline-none rounded-50 font-bold text-base; }
+.hover-border-a:after { content: ''; }
+.hover-border.min-w-208:after { content: ''; @apply -bottom-3; }
+
+.btn { @apply relative bg-green-100 text-white leading-snug px-40 inline-flex items-center justify-center text-center outline-none rounded-50 font-bold text-base; }
+
+.btn[disabled] { @apply text-smoke-a50; }
 
 .btn-gray { @apply bg-gray-200 text-gray-100; }
 .btn-white { @apply bg-white text-gray-100a50; }
 .btn-dark-gray { @apply bg-gray-100 text-white; }
-.btn:hover { @apply bg-green-700 text-white; }
+.btn:hover { @apply bg-green-200 text-white; }
 
 .list-tick li { @apply pl-35 }
-.list-tick li:before { content: '\e90b'; @apply font-icomoon float-left -ml-35 mt-2 text-green-600; }
+.list-tick li:before { content: '\e90b'; @apply font-icomoon float-left -ml-35 mt-2 text-green-100; }
 
 .js-will-blur { transition: filter 0.3s linear; }
 .blur { -webkit-filter: url(#svg-blur); filter: url(#svg-blur); }
@@ -35,9 +45,9 @@ input:checked + .icon-check:before { @apply opacity-100; }
 .js-help.active .hidden { @apply block; }
 .js-help.active .block { @apply hidden; }
 
-.cart-panel { @apply -right-600 transition; }
+.cart-panel { @apply transition; right: -120%; }
 
-.cart-active .cart-panel { @apply right-0; }
+.cart-panel.active { @apply right-0; }
 
 .modal { @apply opacity-0 invisible transition; }
 .modal-active .modal.show { @apply opacity-100 visible; }
@@ -61,8 +71,12 @@ input:checked + .icon-check:before { @apply opacity-100; }
 [data-tab].current { @apply font-bold; }
 .current.hover-border:after { @apply w-full; }
 
+.tooltip-arrow-t { @apply w-0 h-0 border-solid; border-width: 0 6px 10px; border-color: transparent transparent theme('colors.green.100'); }
+
 @media (max-width: 767px) {
     .btn { @apply text-f14 py-9 min-w-199; }
+
+    .btn-e { @apply min-w-0; }
 
     .btn-b { @apply text-base pt-6 px-36 pb-7; }
 
@@ -71,10 +85,14 @@ input:checked + .icon-check:before { @apply opacity-100; }
 
 @media (min-width: theme('screens.sm')) {
     .input { @apply text-f18 h-63; }
+    .input-a { @apply h-50; }
+    .input-b { @apply h-55 text-f18; }
 
     .btn-a { @apply text-f20 py-12 min-w-200; }
     .btn-b { @apply text-f20 pt-6 pb-11; }
     .btn-c { @apply text-f22 pt-6 pb-12; }
+    .btn-d { @apply text-f18 pt-13 pb-17; }
+    .btn-e { @apply text-f18 pt-11 pb-14; }
     .btn-lg { @apply text-f22 pt-17 pb-21 min-w-367; }
     .btn-md { @apply text-f18; }
     .btn-sm { @apply font-medium text-f16 py-7; }
@@ -88,6 +106,7 @@ input:checked + .icon-check:before { @apply opacity-100; }
     .list-tick li:before { @apply -ml-60 }
 
     .input { @apply px-33; }
+    .input-a { @apply px-18; }
 }
 
 @media (min-width: 1700px) {

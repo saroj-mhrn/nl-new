@@ -43,531 +43,1242 @@
             </div>
         </header>
 
-        <main>
-            <div class="bg-gray-200 shadow-s1">
-                <div class="container xl:max-w-1468 flex items-center justify-between">
-                    <a href="#" class="inline-flex items-center font-bold text-f18 text-gray-100 hover:text-green-100 p-8 -ml-8">
-                        <img src="/assets/images/nick.png" alt="" class="rounded-full w-33 h-33 mr-16">
-                        <span class="hidden sm:inline">Hello, Nick!</span>
-                    </a>
-
-                    <ul class="flex items-center -mx-13 font-bold text-f14 sm:text-lg">
-                        <li class="lg:mr-20 active"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Orders</a></li>
-                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 py-10 md:py-26 text-gray-100 hover:text-green-100 hover-border">Account</a></li>
+        <main class="pt-49 md:pt-67">
+            <div class="fixed top-46 sm:top-66 md:top-94 left-0 right-0 bg-gray-200 shadow-s1 z-1">
+                <div class="container xl:max-w-1468">
+                    <ul class="flex justify-center items-center -mx-13 text-center text-f16 sm:text-lg">
+                        <li class="lg:mr-20 active"><a href="#" class="block px-24 md:px-16 lg:px-30 pt-16 pb-11 md:pt-25 md:pb-20 text-gray-100 hover:text-green-100 hover-border min-w-208 font-bold">Orders</a></li>
+                        <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 pt-16 pb-11 md:pt-25 md:pb-20 text-gray-100 hover:text-green-100 hover-border min-w-208 sm:font-bold">Account</a></li>
                     </ul>
-
-                    <a href="#" class="btn btn-white min-w-1 text-f18 p-8 md:pt-5 md:px-40 md:pb-8"><i class="icon-logout md:hidden"></i><span class="hidden md:inline">Log Out</span></a>
                 </div>
             </div>
 
-            <div class="container xl:max-w-1468">
-                <div class="mb-33">
-                    <h2 class="font-bold text-f18 leading-tight pt-18 pb-13">Featured Items</h2>
+            <div class="pt-20 sm:pt-0 pb-50">
+                <!-- active panel -->
+                <!-- active class: `z-100 fixed inset-0 sm:inset-auto overflow-y-auto sm:overflow-y-none bg-white sm:relative shadow-s1 sm:shadow-none` -->
+                <!-- inactive class : `mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none` -->
+                <div class="z-100 fixed inset-0 sm:inset-auto overflow-y-auto sm:overflow-y-none bg-white sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white shadow-s1">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-down` with `icon-chevron-up` on active -->
+                                <i class="icon-chevron-up hidden sm:inline"></i>
 
-                    <div class="js-slider-a slick-visible -mx-8">
-                        <div class="px-8">
-                            <div class="shadow-s1 rounded-10">
-                                <div data-bg class="bg-cover bg-center bg-no-repeat h-247 rounded-t-10">
-                                    <span data-srcset="/assets/images/hero-img01.jpg, /assets/images/hero-img01@2x.jpg 2x"></span>
-                                </div>
-                                <div class="relative bg-white pt-40 md:pt-14 px-30 pb-29 rounded-b-10 text-f16 md:text-f22 leading-tight">
-                                    <strong class="block font-bold mb-3">Try our new Fruit Bites snack pouches!</strong>
-                                    <p>$4.95/pouch, 5 bags per pouch. Allergen safe & only 5 grams of sugar per serving!</p>
-                                    <div class="absolute top-0 right-14 sm:right-30 md:right-145 translate-yhn">
-                                        <a href="#" class="btn pt-10 pb-13 min-w-20 lg:min-w-217">Add to Order</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-8">
-                            <div class="shadow-s1 rounded-10">
-                                <div data-bg class="bg-cover bg-center bg-no-repeat h-247 rounded-t-10">
-                                    <span data-srcset="/assets/images/hero-img01.jpg, /assets/images/hero-img01@2x.jpg 2x"></span>
-                                </div>
-                                <div class="relative bg-white pt-40 md:pt-14 px-30 pb-29 rounded-b-10 text-f16 md:text-f22 leading-tight">
-                                    <strong class="block font-bold mb-3">Try our new Fruit Bites snack pouches!</strong>
-                                    <p>$4.95/pouch, 5 bags per pouch. Allergen safe & only 5 grams of sugar per serving!</p>
-                                    <div class="absolute top-0 right-14 sm:right-30 md:right-145 translate-yhn">
-                                        <a href="#" class="btn pt-10 pb-13 min-w-20 lg:min-w-217">Add to Order</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-8">
-                            <div class="shadow-s1 rounded-10">
-                                <div data-bg class="bg-cover bg-center bg-no-repeat h-247 rounded-t-10">
-                                    <span data-srcset="/assets/images/hero-img01.jpg, /assets/images/hero-img01@2x.jpg 2x"></span>
-                                </div>
-                                <div class="relative bg-white pt-40 md:pt-14 px-30 pb-29 rounded-b-10 text-f16 md:text-f22 leading-tight">
-                                    <strong class="block font-bold mb-3">Try our new Fruit Bites snack pouches!</strong>
-                                    <p>$4.95/pouch, 5 bags per pouch. Allergen safe & only 5 grams of sugar per serving!</p>
-                                    <div class="absolute top-0 right-14 sm:right-30 md:right-145 translate-yhn">
-                                        <a href="#" class="btn pt-10 pb-13 min-w-20 lg:min-w-217">Add to Order</a>
-                                    </div>
-                                </div>
+                                <!-- mobile on active -->
+                                <i class="icon-close hover:text-red-300 sm:hidden"></i>
+
+                                <!-- mobile on inactive -->
+                                <!-- <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div> -->
                             </div>
                         </div>
                     </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="block">
+                        <!-- mobile only tabs -->
+                        <div class="bg-gray-200 shadow-s1 z-1">
+                            <div class="container xl:max-w-1468">
+                                <ul class="flex justify-center items-center -mx-13 text-center text-f16 sm:text-lg">
+                                    <li class="lg:mr-20 active"><a href="#" class="block px-24 md:px-16 lg:px-30 pt-16 pb-11 md:pt-25 md:pb-20 text-gray-100 hover:text-green-100 hover-border min-w-208 font-bold">My Cart</a></li>
+                                    <li class="lg:mr-20"><a href="#" class="block px-24 md:px-16 lg:px-30 pt-16 pb-11 md:pt-25 md:pb-20 text-gray-100 hover:text-green-100 hover-border min-w-208 sm:font-bold">Menus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container px-0 sm:px-25 xl:max-w-1506">
+                            <!-- desktop only -->
+                            <div class="hidden sm:flex justify-between items-end pt-26 pb-28 xl:px-23">
+                                <ul class="flex items-center mb-3">
+                                    <li>10 Items</li>
+                                    <li class="border-l border-gray-100 mx-10 h-16"></li>
+                                    <li>Total: $123.45</li>
+                                </ul>
+                        
+                                <a href="#" class="btn py-9 px-45 min-w-183">Add Items <i class="icon-chevron-right text-f12 absolute translate-yhn top-50p right-30"></i></a>
+                            </div>
+
+                            <!-- desktop menus + mobile Menu tab content -->
+                            <div class="px-11 sm:p-0">
+                                <!-- mobile menu filters -->
+                                <div class="sm:hidden">
+                                    <div class="-mx-11 overflow-y-auto md:ml-50 shadow-s1">
+                                        <ul class="table w-full min-2-500 whitespace-no-wrap sm:font-bold text-center text-f14 md:text-f18 xl:text-f22 -mr-25 pt-17">
+                                            <li class="table-cell">
+                                                <a class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border hover-border-a cursor-pointer">
+                                                    Fingerfoods
+                                                    <span class="absolute top-2 min-w-14 h-14 rounded-full bg-green-100 text-white text-center font-bold text-f10 p-1">2</span>
+                                                </a>
+                                            </li>
+                                            <li class="table-cell">
+                                                <a class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border hover-border-a cursor-pointer">
+                                                    Toddlers
+                                                    <span class="absolute top-2 min-w-14 h-14 rounded-full bg-green-100 text-white text-center font-bold text-f10 p-1">4</span>
+                                                </a>
+                                            </li>
+                                            <li class="table-cell">
+                                                <a class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border hover-border-a cursor-pointer">
+                                                    Snacks
+                                                    <span class="absolute top-2 min-w-14 h-14 rounded-full bg-green-100 text-white text-center font-bold text-f10 p-1">1</span>
+                                                </a>
+                                            </li>
+                                            <li class="table-cell">
+                                                <a class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border hover-border-a cursor-pointer">
+                                                    Family
+                                                    <span class="absolute top-2 min-w-14 h-14 rounded-full bg-green-100 text-white text-center font-bold text-f10 p-1">2</span>
+                                                </a>
+                                            </li>
+                                            <li class="table-cell">
+                                                <a class="block w-full px-16 py-16 md:pt-23 md:pb-27 text-gray-100 hover:text-green-100 hover-border hover-border-a cursor-pointer">
+                                                    Cold Lunches
+                                                    <span class="absolute top-2 min-w-14 h-14 rounded-full bg-green-100 text-white text-center font-bold text-f10 p-1">8</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="flex py-12">
+                                        <div class="flex-1">
+                                            <div class="w-full flex">
+                                                <button class="icon-search bg-gray-100a20 sm:bg-gray-200 rounded-l-30 w-50 sm:w-72 h-35 sm:h-53 pl-6 sm:text-f23"></button>
+                                                <input type="search"
+                                                class="bg-gray-200 w-full h-35 sm:h-53 text-f16 text-base rounded-r-30 px-20 py-4 sm:pl-0 sm:pr-30 sm:py-20 flex-1 sm:text-center" placeholder="Search" />
+                                            </div>
+                                        </div>
+
+                                        <div class="w-63 ml-12 sm:hidden">
+                                            <a @click.prevent="isOpen = !isOpen" href="#" class="icon-tune w-full h-35 rounded-30 border-2 border-green-100 text-green-100 flex items-center justify-center"></a>
+
+                                            <div class="z-100 fixed top-0 left-0 right-0 bottom-0 p-11 overflow-y-auto text-gray-700 transition" :class="isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'">
+                                                <div class="flex items-center min-h-full">
+                                                    <div class="shadow-s1 rounded-10 w-full">
+                                                        <div class="flex items-center justify-between rounded-t-10 bg-gray-200 py-6 px-20">
+                                                            <div class="flex items-center text-base">
+                                                                <i class="icon-tune mr-10 text-f18"></i>
+                                                                <span class="flex-1 font-bold">Filters</span>
+                                                            </div>
+                                                            <i @click.prevent="isOpen = !isOpen" class="cursor-pointer transition hover:text-red-100 icon-close text-f14 p-10 -mr-17"></i>
+                                                        </div>
+
+                                                        <div class="rounded-b-10 bg-white px-17 text-center text-f12 leading-tighter">
+                                                            <div class="border-b border-gray-600a20 py-16">
+                                                                <strong class="block font-bold">Preset Filters</strong>
+                                                                <span class="block text-f10 mb-11">Applies filters based on each child’s preferences</span>
+
+                                                                <div class="flex -mx-3">
+                                                                    <div class="px-3 w-1/2">
+                                                                        <a href="#" class="block text-center bg-gray-600 text-white font-bold rounded-30 pt-7 pb-8 px-10 text-f12">Use Tim's Preferences</a>
+                                                                    </div>
+                                                                    <div class="px-3 w-1/2">
+                                                                        <a href="#" class="block text-center bg-gray-200 text-gray-600 rounded-30 pt-7 pb-8 px-10 text-f12">Use Amy’s Preferences</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="border-b border-gray-600a20 py-16">
+                                                                <strong class="block font-bold mb-13">Dietary Preferences</strong>
+
+                                                                <ul class="flex flex-wrap text-center -mb-20">
+                                                                    <li class="w-1/4 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-600 mx-auto mb-6"></div>
+                                                                        <div class="block font-bold">Meat + Veg</div>
+                                                                    </li>
+                                                                    <li class="w-1/4 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Vegetarian</div>
+                                                                    </li>
+                                                                    <li class="w-1/4 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Vegan</div>
+                                                                    </li>
+                                                                    <li class="w-1/4 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Pescetarian</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="border-b border-gray-600a20 py-16">
+                                                                <strong class="block font-bold mb-13">Dietary Preferences</strong>
+
+                                                                <div class="table w-full rounded-30 overflow-hidden">
+                                                                    <a href="#" class="table-cell text-center bg-gray-600 text-white font-bold pt-7 pb-8 px-10 text-f12">Picky</a>
+                                                                    <a href="#" class="table-cell text-center bg-gray-200 text-gray-600 pt-7 pb-8 px-10 text-f12">Normal</a>
+                                                                    <a href="#" class="table-cell text-center bg-gray-200 text-gray-600 pt-7 pb-8 px-10 text-f12">Adventurous</a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="border-b border-gray-600a20 py-16">
+                                                                <strong class="block font-bold mb-13">Dietary Preferences</strong>
+
+                                                                <ul class="flex flex-wrap justify-center text-center -mb-20">
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Peanut</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Wheat</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-600 mx-auto mb-6"></div>
+                                                                        <div class="block font-bold">Egg</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Soy</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Milk</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Shellfish</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Tree Nut</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Fish</div>
+                                                                    </li>
+                                                                    <li class="min-w-58 px-10 pb-20">
+                                                                        <div class="w-27 h-27 rounded-full bg-gray-200 mx-auto mb-6"></div>
+                                                                        <div class="block">Sesame</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="pt-16 pb-8">
+                                                                <a href="#" class="btn btn-green w-full text-f14 mb-5">Apply Filters</a>
+                                                                <button class="text-f12 text-gray-600 py-8 px-20">Clear Filters</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="flex flex-wrap justify-center -mx-6 md:-mx-17 mb-6">
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Chicken Bites with Mashed Sweet Potatoes & Green Beans
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Taking chicken nuggets to a new</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Mac & Cheese with Cauliflower
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Try our favorite, veggie-packed</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Chicken Bites with Mashed Sweet Potatoes & Green Beans
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Taking chicken nuggets to a new</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Mac & Cheese with Cauliflower
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Try our favorite, veggie-packed</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Mac & Cheese with Cauliflower
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Try our favorite, veggie-packed</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Chicken Bites with Mashed Sweet Potatoes & Green Beans
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Taking chicken nuggets to a new</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Mac & Cheese with Cauliflower
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Try our favorite, veggie-packed</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Chicken Bites with Mashed Sweet Potatoes & Green Beans
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Taking chicken nuggets to a new</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Mac & Cheese with Cauliflower
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Try our favorite, veggie-packed</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="w-1/2 md:w-1/4 lg:w-296 px-6 sm:px-13 mb-10 sm:mb-30">
+                                        <a href="#">
+                                            <div class="rounded-10 overflow-hidden shadow text-center">
+                                                <div class="relative h-131 sm:h-180">
+                                                    <div data-bg class="bg-stretch">
+                                                        <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                                    </div>
+                                                    <div class="absolute top-full left-50p translate-c rounded-30 bg-white shadow-s1 py-2 px-3 flex items-center justify-between">
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                        <span class="font-bold text-f20 sm:text-f30 leading-none text-green-100 w-32 sm:w-40 px-5 text-center">1</span>
+                                                        <a class="block relative text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100a2 hover:bg-green-200 hover:text-white text-green-100 cursor-pointer">
+                                                            <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                        </a>
+                                                    </div>
+                                                        
+                                                    <!-- only add btn -->
+                                                    <!-- <a class="text-f12 w-30 sm:w-36 h-30 sm:h-36 rounded-full bg-green-100 hover:bg-green-200 text-white absolute top-full left-50p translate-c cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a> -->
+                                                        
+                                                    <img src="/assets/images/picky-eater-fav.svg" class="absolute top-7 right-8 w-45" alt="Picky eater fav">
+                                                    <span class="absolute bg-green-100 text-white text-f11 leading-tighter text-center w-140 top-24 left-0 -ml-44 rotate-n45 py-2">New!</span>
+                                                </div>
+                                                        
+                                                <div class="px-9 sm:px-22 pt-31 pb-9 sm:pb-16">
+                                                    <h3 class="js-h1 font-bold text-f14 sm:text-f18 leading-a14 sm:leading-a17 mb-26 sm:mb-17">
+                                                        Mac & Cheese with Cauliflower
+                                                    </h3>
+                                                    <p class="js-h2 hidden sm:block mb-21 min-h-29">Try our favorite, veggie-packed</p>
+                                                    <strong class="js-h3 block font-bold text-f12 sm:text-f17 text-green-100">
+                                                        <span class="sm:hidden">Baby Meal -</span>
+                                                        <span>$8.95</span>
+                                                    </strong>
+                                                </div>
+                                                        
+                                                <div class="js-h4 px-13 sm:px-20 pt-4 pb-6 sm:py-12 bg-gray-200 flex sm:block text-f10 leading-a2 sm:leading-tight">
+                                                    <span class="sm:hidden font-bold mr-2">No:</span>
+                                                    <span class="flex-1 text-left">Soy Free, Egg Free, Milk Free</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- mobile Cart tab content -->
+                            <div class="px-11 sm:hidden">
+                                <div>
+                                    <div class="flex border-b border-gray-100a20 py-17">
+                                        <div data-bg class="rounded-10 w-80 mr-12 sm:mr-20 bg-cover bg-center">
+                                            <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                        </div>
+                                        <div class="relative flex-1 py-2 pr-7">
+                                            <a @click="remove" class="absolute bottom-1 right-18 text-gray-100 text-f18 hover:text-red-100 cursor-pointer opacity-50">
+                                                <i class="icon-delete"></i>
+                                            </a>
+                                            <h4 class="font-medium text-f12 leading-a38 text-gray-100 mb-4">Braised Chicken, Steamed Potato & Raisin</h4>
+                                            <span class="block text-gray-100a50 font-medium text-f12 leading-a13 mb-14">
+                                                Toddler Meal
+                                                <span>- $8.50</span>
+                                            </span>
+                                    
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <a @click="subtract" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                    <div class="bg-gray-200 rounded-30 pt-4 pb-6 px-4 w-65 font-bold text-f10 leading-normal text-center mx-5">
+                                                        Qty: 3
+                                                    </div>
+                                                    <a @click="add" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex border-b border-gray-100a20 py-17">
+                                        <div data-bg class="rounded-10 w-80 mr-12 sm:mr-20 bg-cover bg-center">
+                                            <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                        </div>
+                                        <div class="relative flex-1 py-2 pr-7">
+                                            <a @click="remove" class="absolute bottom-1 right-18 text-gray-100 text-f18 hover:text-red-100 cursor-pointer opacity-50">
+                                                <i class="icon-delete"></i>
+                                            </a>
+                                            <h4 class="font-medium text-f12 leading-a38 text-gray-100 mb-4">Braised Chicken, Steamed Potato & Raisin</h4>
+                                            <span class="block text-gray-100a50 font-medium text-f12 leading-a13 mb-14">
+                                                Toddler Meal
+                                                <span>- $8.50</span>
+                                            </span>
+                                    
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <a @click="subtract" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                    <div class="bg-gray-200 rounded-30 pt-4 pb-6 px-4 w-65 font-bold text-f10 leading-normal text-center mx-5">
+                                                        Qty: 3
+                                                    </div>
+                                                    <a @click="add" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex border-b border-gray-100a20 py-17">
+                                        <div data-bg class="rounded-10 w-80 mr-12 sm:mr-20 bg-cover bg-center">
+                                            <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                        </div>
+                                        <div class="relative flex-1 py-2 pr-7">
+                                            <a @click="remove" class="absolute bottom-1 right-18 text-gray-100 text-f18 hover:text-red-100 cursor-pointer opacity-50">
+                                                <i class="icon-delete"></i>
+                                            </a>
+                                            <h4 class="font-medium text-f12 leading-a38 text-gray-100 mb-4">Braised Chicken, Steamed Potato & Raisin</h4>
+                                            <span class="block text-gray-100a50 font-medium text-f12 leading-a13 mb-14">
+                                                Toddler Meal
+                                                <span>- $8.50</span>
+                                            </span>
+                                    
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <a @click="subtract" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                    <div class="bg-gray-200 rounded-30 pt-4 pb-6 px-4 w-65 font-bold text-f10 leading-normal text-center mx-5">
+                                                        Qty: 3
+                                                    </div>
+                                                    <a @click="add" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex border-b border-gray-100a20 py-17">
+                                        <div data-bg class="rounded-10 w-80 mr-12 sm:mr-20 bg-cover bg-center">
+                                            <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                        </div>
+                                        <div class="relative flex-1 py-2 pr-7">
+                                            <a @click="remove" class="absolute bottom-1 right-18 text-gray-100 text-f18 hover:text-red-100 cursor-pointer opacity-50">
+                                                <i class="icon-delete"></i>
+                                            </a>
+                                            <h4 class="font-medium text-f12 leading-a38 text-gray-100 mb-4">Braised Chicken, Steamed Potato & Raisin</h4>
+                                            <span class="block text-gray-100a50 font-medium text-f12 leading-a13 mb-14">
+                                                Toddler Meal
+                                                <span>- $8.50</span>
+                                            </span>
+                                    
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <a @click="subtract" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                    <div class="bg-gray-200 rounded-30 pt-4 pb-6 px-4 w-65 font-bold text-f10 leading-normal text-center mx-5">
+                                                        Qty: 3
+                                                    </div>
+                                                    <a @click="add" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex border-b border-gray-100a20 py-17">
+                                        <div data-bg class="rounded-10 w-80 mr-12 sm:mr-20 bg-cover bg-center">
+                                            <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                        </div>
+                                        <div class="relative flex-1 py-2 pr-7">
+                                            <a @click="remove" class="absolute bottom-1 right-18 text-gray-100 text-f18 hover:text-red-100 cursor-pointer opacity-50">
+                                                <i class="icon-delete"></i>
+                                            </a>
+                                            <h4 class="font-medium text-f12 leading-a38 text-gray-100 mb-4">Braised Chicken, Steamed Potato & Raisin</h4>
+                                            <span class="block text-gray-100a50 font-medium text-f12 leading-a13 mb-14">
+                                                Toddler Meal
+                                                <span>- $8.50</span>
+                                            </span>
+                                    
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <a @click="subtract" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                    <div class="bg-gray-200 rounded-30 pt-4 pb-6 px-4 w-65 font-bold text-f10 leading-normal text-center mx-5">
+                                                        Qty: 3
+                                                    </div>
+                                                    <a @click="add" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex border-b border-gray-100a20 py-17">
+                                        <div data-bg class="rounded-10 w-80 mr-12 sm:mr-20 bg-cover bg-center">
+                                            <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                        </div>
+                                        <div class="relative flex-1 py-2 pr-7">
+                                            <a @click="remove" class="absolute bottom-1 right-18 text-gray-100 text-f18 hover:text-red-100 cursor-pointer opacity-50">
+                                                <i class="icon-delete"></i>
+                                            </a>
+                                            <h4 class="font-medium text-f12 leading-a38 text-gray-100 mb-4">Braised Chicken, Steamed Potato & Raisin</h4>
+                                            <span class="block text-gray-100a50 font-medium text-f12 leading-a13 mb-14">
+                                                Toddler Meal
+                                                <span>- $8.50</span>
+                                            </span>
+                                    
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <a @click="subtract" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                    <div class="bg-gray-200 rounded-30 pt-4 pb-6 px-4 w-65 font-bold text-f10 leading-normal text-center mx-5">
+                                                        Qty: 3
+                                                    </div>
+                                                    <a @click="add" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex border-b border-gray-100a20 py-17">
+                                        <div data-bg class="rounded-10 w-80 mr-12 sm:mr-20 bg-cover bg-center">
+                                            <span data-srcset="/assets/images/img02.jpg, /assets/images/img02@2x.jpg 2x"></span>
+                                        </div>
+                                        <div class="relative flex-1 py-2 pr-7">
+                                            <a @click="remove" class="absolute bottom-1 right-18 text-gray-100 text-f18 hover:text-red-100 cursor-pointer opacity-50">
+                                                <i class="icon-delete"></i>
+                                            </a>
+                                            <h4 class="font-medium text-f12 leading-a38 text-gray-100 mb-4">Braised Chicken, Steamed Potato & Raisin</h4>
+                                            <span class="block text-gray-100a50 font-medium text-f12 leading-a13 mb-14">
+                                                Toddler Meal
+                                                <span>- $8.50</span>
+                                            </span>
+                                    
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <a @click="subtract" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-minus absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                    <div class="bg-gray-200 rounded-30 pt-4 pb-6 px-4 w-65 font-bold text-f10 leading-normal text-center mx-5">
+                                                        Qty: 3
+                                                    </div>
+                                                    <a @click="add" class="w-24 h-24 rounded-full bg-green-100 hover:bg-green-200 text-white relative text-f11 cursor-pointer">
+                                                        <i class="icon-add absolute translate-c top-50p left-50p"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-b border-gray-100a20 text-f12 -mt-1 py-11">
+                                    <table class="w-full">
+                                        <tr>
+                                            <td>Sales Tax:</td>
+                                            <td class="text-right">$1.25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping:</td>
+                                            <td class="text-right">$12.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Discount:</td>
+                                            <td class="text-right">15% Off (Code: 15OFF)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>New Subtotal:</td>
+                                            <td class="text-right">
+                                                 <span class="font-medium text-f14 leading-none line-through">$135.95</span>
+                                                <span class="text-green-100 font-bold text-f14 leading-none">123.50</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <div class="text-center py-30">
+                                        <p class="text-f10 mb-5">Shipping to:</p>
+                                        <div class="inline-block relative min-w-367 mb-18">
+                                            <a href="#" class="block rounded-30 bg-gray-200 text-center text-gray-100 font-bold text-f12 px-40 pt-9 pb-11">123 N Main Street, Chicago, IL 60640 <i class="icon-chevron-down text-f8 absolute top-50p translate-yhn right-22"></i></a>
+                                        </div>
+                                        <p>
+                                            <a href="#" class="font-bold text-f10 text-red-300 transition">Skip Week</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- desktop only -->
+                            <div class="hidden sm:block text-center pb-43">
+                                <ul class="flex justify-center text-f18 text-center mb-12">
+                                    <li class="px-15 mb-20 w-23p">Sales Tax: $1.25</li>
+                                    <li class="px-15 mb-20 w-23p">Shipping: $12.00</li>
+                                    <li class="px-15 mb-20 w-23p">Discount: 15% Off (code: 15OFF)</li>
+                                    <li class="px-15 mb-20 w-23p">Total: <span class="line-through">$135.95</span> <strong class="font-bold text-green-100">$123.50</strong></li>
+                                </ul>
+                                <p class="text-f18 mb-15">Shipping to:</p>
+                                <div class="inline-block relative min-w-367 mb-27">
+                                    <a href="#" class="block rounded-30 bg-gray-200 text-center text-gray-100 font-bold text-base px-40 pt-9 pb-11">123 N Main Street, Chicago, IL 60640 <i class="icon-chevron-down text-f10 absolute top-50p translate-yhn right-22"></i></a>
+                                </div>
+                                <p>
+                                    <a href="#" class="font-bold text-base text-red-300a5 hover:text-red-300 transition">Skip Week</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
                 </div>
 
-                <div class="flex flex-wrap -mx-23 mb-40">
-                    <div class="w-full md:w-44p lg:w-37p px-23 mb-20 md:mb-0">
-                        <h2 class="font-bold text-f18 leading-tight mb-16">My Orders</h2>
-                        
-                        <ul class="mb-31">
-                            <li class="mb-14">
-                                <!-- active state classes change: border-white to border-green-200 and `translate-x16 md:translate-x31` -->
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-green-200 translate-x16 md:translate-x31">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">21</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">28</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <!-- skipped state classes change: text-green-200 to text-red-100 and bg-green-200 to bg-red-100 -->
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-red-100 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-red-100 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">5</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-red-100 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-red-100 font-bold mt-2 mb-5">Skipped</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">12</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">19</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">21</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">28</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <!-- skipped state classes change: text-green-200 to text-red-100 and bg-green-200 to bg-red-100 -->
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-red-100 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-red-100 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">5</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-red-100 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-red-100 font-bold mt-2 mb-5">Skipped</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">12</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">19</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">21</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-14">
-                                <div class="shadow-s1 rounded-10 flex border-2 hover:border-green-200 transition cursor-pointer px-21 pt-21 pb-18 border-white translate-x0">
-                                    <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                        <div class="uppercase text-f19 -mb-3">jun</div>
-                                        <div class="text-f38">28</div>
-                                        <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                    </div>
-
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-
-                                    <div class="w-68 pt-5 relative ml-15">
-                                        <img src="/assets/images/box.svg" width="54" alt="">
-                                        <span class="absolute -top-12 -right-4 w-25 h-25 text-center rounded-full bg-green-200 text-white font-bold text-f15 pt-4">8</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="text-center">
-                            <a href="#" class="text-gray-100a50 text-f8 hover:text-green-100 font-bold text-f14">
-                                <span>Load More</span>
-                                <i class="icon-chevron-down text-f8 ml-6 -mt-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-56p lg:w-63p px-23">
-                        <h2 class="font-bold text-f18 leading-tight mb-16">Order Details</h2>
-
-                        <div class="shadow-s1 rounded-10 transition cursor-pointer px-15 pt-24 pb-32">
-                            <div class="flex pb-26 mb-4 border-b border-gray-100a20">
-                                <div class="pr-25 mr-32 text-green-200 font-bold leading-a04 relative text-center w-78">
-                                    <div class="uppercase text-f19 -mb-3">jun</div>
-                                    <div class="text-f38">21</div>
-                                    <span class="absolute -top-6 -bottom-2 right-0 w-3 bg-green-200 rounded-30"></span>
-                                </div>
-
-                                <div class="flex-1 sm:flex">
-                                    <div class="flex-1">
-                                        <strong class="block text-green-200 font-bold mt-2 mb-5">Scheduled</strong>
-                                        <p class="text-f14">Make changes by June 5 @ 8pm CST</p>
-                                    </div>
-                                    
-                                    <div class="relative mt-30 sm:mt-0 sm:ml-15 sm:mr-9">
-                                        <a href="#" class="btn font-medium py-6 sm:py-12 min-w-150">Menus<i class="icon-chevron-right absolute top-50p translate-yhn right-20 text-f13"></i></a>
-                                    </div>
-                                </div>
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
                             </div>
-
-                            <div class="flex border-b border-gray-100a20 py-17 sm:pt-20 sm:pb-22">
-                                <div class="rounded-10 w-80 sm:w-141 mr-12 sm:mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
-                                <div class="relative flex-1 py-2 pr-7">
-                                    <a href="#" class="absolute bottom-1 right-18 sm:static sm:float-right sm:ml-15 sm:mb-15 text-gray-100 text-f18 sm:text-f13 hover:text-red-100">
-                                        <i class="icon-close hidden sm:inline"></i>
-                                        <i class="icon-delete sm:hidden"></i>
-                                    </a>
-                                    <h4 class="font-medium text-f12 sm:text-base leading-a38 sm:leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes..</h4>
-                                    <span class="block text-gray-100a50 sm:text-green-100 font-medium text-f12 sm:text-f14 leading-a13 mb-14 sm:mb-27">Kid Meal <span class="sm:hidden">- $24.95</span></span>
-
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
-                                            <div class="bg-gray-200 rounded-30 pt-4 sm:pt-3 pb-6 sm:pb-7 px-4 w-65 sm:w-87 font-bold text-f10 sm:text-f14 leading-normal text-center mx-5 sm:mx-7">Qty: 3</div>
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
-                                        </div>
-
-                                        <div class="pl-20 hidden sm:block">
-                                            <span class="font-medium text-f14 leading-none">$17.90</span>
-                                        </div>
-                                    </div>
-                                </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
                             </div>
-                            <div class="flex border-b border-gray-100a20 py-17 sm:pt-20 sm:pb-22">
-                                <div class="rounded-10 w-80 sm:w-141 mr-12 sm:mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
-                                <div class="relative flex-1 py-2 pr-7">
-                                    <a href="#" class="absolute bottom-1 right-18 sm:static sm:float-right sm:ml-15 sm:mb-15 text-gray-100 text-f18 sm:text-f13 hover:text-red-100">
-                                        <i class="icon-close hidden sm:inline"></i>
-                                        <i class="icon-delete sm:hidden"></i>
-                                    </a>
-                                    <h4 class="font-medium text-f12 sm:text-base leading-a38 sm:leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes..</h4>
-                                    <span class="block text-gray-100a50 sm:text-green-100 font-medium text-f12 sm:text-f14 leading-a13 mb-14 sm:mb-27">Kid Meal <span class="sm:hidden">- $24.95</span></span>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-down` with `icon-chevron-up` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
 
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
-                                            <div class="bg-gray-200 rounded-30 pt-4 sm:pt-3 pb-6 sm:pb-7 px-4 w-65 sm:w-87 font-bold text-f10 sm:text-f14 leading-normal text-center mx-5 sm:mx-7">Qty: 3</div>
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
-                                        </div>
-
-                                        <div class="pl-20 hidden sm:block">
-                                            <span class="font-medium text-f14 leading-none">$17.90</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex border-b border-gray-100a20 py-17 sm:pt-20 sm:pb-22">
-                                <div class="rounded-10 w-80 sm:w-141 mr-12 sm:mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
-                                <div class="relative flex-1 py-2 pr-7">
-                                    <a href="#" class="absolute bottom-1 right-18 sm:static sm:float-right sm:ml-15 sm:mb-15 text-gray-100 text-f18 sm:text-f13 hover:text-red-100">
-                                        <i class="icon-close hidden sm:inline"></i>
-                                        <i class="icon-delete sm:hidden"></i>
-                                    </a>
-                                    <h4 class="font-medium text-f12 sm:text-base leading-a38 sm:leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes..</h4>
-                                    <span class="block text-gray-100a50 sm:text-green-100 font-medium text-f12 sm:text-f14 leading-a13 mb-14 sm:mb-27">Kid Meal <span class="sm:hidden">- $24.95</span></span>
-
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
-                                            <div class="bg-gray-200 rounded-30 pt-4 sm:pt-3 pb-6 sm:pb-7 px-4 w-65 sm:w-87 font-bold text-f10 sm:text-f14 leading-normal text-center mx-5 sm:mx-7">Qty: 3</div>
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
-                                        </div>
-
-                                        <div class="pl-20 hidden sm:block">
-                                            <span class="font-medium text-f14 leading-none">$17.90</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex border-b border-gray-100a20 py-17 sm:pt-20 sm:pb-22">
-                                <div class="rounded-10 w-80 sm:w-141 mr-12 sm:mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
-                                <div class="relative flex-1 py-2 pr-7">
-                                    <a href="#" class="absolute bottom-1 right-18 sm:static sm:float-right sm:ml-15 sm:mb-15 text-gray-100 text-f18 sm:text-f13 hover:text-red-100">
-                                        <i class="icon-close hidden sm:inline"></i>
-                                        <i class="icon-delete sm:hidden"></i>
-                                    </a>
-                                    <h4 class="font-medium text-f12 sm:text-base leading-a38 sm:leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes..</h4>
-                                    <span class="block text-gray-100a50 sm:text-green-100 font-medium text-f12 sm:text-f14 leading-a13 mb-14 sm:mb-27">Kid Meal <span class="sm:hidden">- $24.95</span></span>
-
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
-                                            <div class="bg-gray-200 rounded-30 pt-4 sm:pt-3 pb-6 sm:pb-7 px-4 w-65 sm:w-87 font-bold text-f10 sm:text-f14 leading-normal text-center mx-5 sm:mx-7">Qty: 3</div>
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
-                                        </div>
-
-                                        <div class="pl-20 hidden sm:block">
-                                            <span class="font-medium text-f14 leading-none">$17.90</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex border-b border-gray-100a20 py-17 sm:pt-20 sm:pb-22">
-                                <div class="rounded-10 w-80 sm:w-141 mr-12 sm:mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
-                                <div class="relative flex-1 py-2 pr-7">
-                                    <a href="#" class="absolute bottom-1 right-18 sm:static sm:float-right sm:ml-15 sm:mb-15 text-gray-100 text-f18 sm:text-f13 hover:text-red-100">
-                                        <i class="icon-close hidden sm:inline"></i>
-                                        <i class="icon-delete sm:hidden"></i>
-                                    </a>
-                                    <h4 class="font-medium text-f12 sm:text-base leading-a38 sm:leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes..</h4>
-                                    <span class="block text-gray-100a50 sm:text-green-100 font-medium text-f12 sm:text-f14 leading-a13 mb-14 sm:mb-27">Kid Meal <span class="sm:hidden">- $24.95</span></span>
-
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
-                                            <div class="bg-gray-200 rounded-30 pt-4 sm:pt-3 pb-6 sm:pb-7 px-4 w-65 sm:w-87 font-bold text-f10 sm:text-f14 leading-normal text-center mx-5 sm:mx-7">Qty: 3</div>
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
-                                        </div>
-
-                                        <div class="pl-20 hidden sm:block">
-                                            <span class="font-medium text-f14 leading-none">$17.90</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex border-b border-gray-100a20 py-17 sm:pt-20 sm:pb-22">
-                                <div class="rounded-10 w-80 sm:w-141 mr-12 sm:mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
-                                <div class="relative flex-1 py-2 pr-7">
-                                    <a href="#" class="absolute bottom-1 right-18 sm:static sm:float-right sm:ml-15 sm:mb-15 text-gray-100 text-f18 sm:text-f13 hover:text-red-100">
-                                        <i class="icon-close hidden sm:inline"></i>
-                                        <i class="icon-delete sm:hidden"></i>
-                                    </a>
-                                    <h4 class="font-medium text-f12 sm:text-base leading-a38 sm:leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes..</h4>
-                                    <span class="block text-gray-100a50 sm:text-green-100 font-medium text-f12 sm:text-f14 leading-a13 mb-14 sm:mb-27">Kid Meal <span class="sm:hidden">- $24.95</span></span>
-
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
-                                            <div class="bg-gray-200 rounded-30 pt-4 sm:pt-3 pb-6 sm:pb-7 px-4 w-65 sm:w-87 font-bold text-f10 sm:text-f14 leading-normal text-center mx-5 sm:mx-7">Qty: 3</div>
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
-                                        </div>
-
-                                        <div class="pl-20 hidden sm:block">
-                                            <span class="font-medium text-f14 leading-none">$17.90</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex border-b border-gray-100a20 py-17 sm:pt-20 sm:pb-22">
-                                <div class="rounded-10 w-80 sm:w-141 mr-12 sm:mr-20 bg-cover bg-center" style="background-image: url('/assets/images/img02.jpg');"></div>
-                                <div class="relative flex-1 py-2 pr-7">
-                                    <a href="#" class="absolute bottom-1 right-18 sm:static sm:float-right sm:ml-15 sm:mb-15 text-gray-100 text-f18 sm:text-f13 hover:text-red-100">
-                                        <i class="icon-close hidden sm:inline"></i>
-                                        <i class="icon-delete sm:hidden"></i>
-                                    </a>
-                                    <h4 class="font-medium text-f12 sm:text-base leading-a38 sm:leading-a13 text-gray-100 mb-4">Chicken Bites with Mashed Sweet Potatoes..</h4>
-                                    <span class="block text-gray-100a50 sm:text-green-100 font-medium text-f12 sm:text-f14 leading-a13 mb-14 sm:mb-27">Kid Meal <span class="sm:hidden">- $24.95</span></span>
-
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-minus absolute translate-c top-50p left-50p"></i></a>
-                                            <div class="bg-gray-200 rounded-30 pt-4 sm:pt-3 pb-6 sm:pb-7 px-4 w-65 sm:w-87 font-bold text-f10 sm:text-f14 leading-normal text-center mx-5 sm:mx-7">Qty: 3</div>
-                                            <a href="#" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-green-100 hover:bg-green-700 text-white relative text-f11 sm:text-base"><i class="icon-add absolute translate-c top-50p left-50p"></i></a>
-                                        </div>
-
-                                        <div class="pl-20 hidden sm:block">
-                                            <span class="font-medium text-f14 leading-none">$17.90</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="border-t border-gray-100a20 -mt-1 py-23 px-11">
-                                <table class="w-full">
-                                    <tr>
-                                        <td>Sales Tax:</td>
-                                        <td class="text-right">$1.25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Shipping:</td>
-                                        <td class="text-right">$12.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Discount:</td>
-                                        <td class="text-right">15% Off (Code: 15OFF)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>New Subtotal:</td>
-                                        <td class="text-right">
-                                            <span class="font-medium leading-none line-through">$18.95</span>
-                                            <span class="text-green-100 font-bold leading-none">$16.50</span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="flex flex-wrap py-2 px-11 -mx-10">
-                                <div class="w-full xl:w-1/2 px-10 mb-15 xl:mb-0">
-                                    <div class="relative group">
-                                        <a href="#" class="block bg-gray-200 text-gray-100 group-hover:bg-green-700 group-hover:text-white rounded-30 px-58 pt-12 pb-13 text-center">
-                                            <span>Shipping to: <strong>12345 Main St, Chicago, IL</strong></span>
-                                            <i class="icon-chevron-down absolute top-50p right-36 translate-yhn text-f7"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="w-full xl:w-1/2 px-10 mb-15 xl:mb-0">
-                                    <a href="#" class="btn btn-gray w-full font-medium pt-11 pb-12">Skip Week</a>
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
+                </div>
+
+                <div class="mb-9 sm:mb-0 sm:relative shadow-s1 sm:shadow-none">
+                    <!-- toggle class `shadow-s1` on active -->
+                    <div class="relative bg-white">
+                        <div class="container xl:max-w-1468 flex cursor-pointer pt-15 pb-17 sm:py-24 md:py-34">
+                            <div class="px-7 sm:pl-0 sm:pr-25 mr-14 sm:mr-45 text-green-100 font-bold leading-a04 relative w-51 sm:w-95">
+                                <div class="uppercase text-f14 sm:text-f22 -mb-2 sm:-mb-3">jun</div>
+                                <div class="text-f28 sm:text-f40">28</div>
+                                <span class="absolute -top-4 sm:-top-2 -bottom-1 sm:-bottom-2 right-0 w-3 sm:w-4 bg-green-100 rounded-4"></span>
+                            </div>
+                
+                            <div class="flex-1">
+                                <strong class="block text-green-100 font-bold text-f14 sm:text-f22 mb-2 sm:mb-5">Scheduled</strong>
+                                <p class="text-f12 sm:text-base">Make changes by June 5 @ 8pm CST</p>
+                            </div>
+                
+                            <div class="self-center sm:mt-8 sm:mr-81 ml-20 sm:ml-40">
+                                <!-- desktop, switch class `icon-chevron-up` with `icon-chevron-down` on active -->
+                                <i class="icon-chevron-down hidden sm:inline"></i>
+
+                                <!-- mobile -->
+                                <div class="w-40 pt-8 relative sm:hidden">
+                                    <img src="/assets/images/box.svg" width="40" alt="">
+                                    <span class="absolute -top-3 -right-0 w-18 h-18 text-center rounded-full bg-green-100 text-white font-bold text-f12 pt-2">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle class `block` class to display content -->
+                    <div class="hidden"></div>
+                    <hr class="hidden sm:block absolute border-t border-gray-100a20 w-full max-w-1516 mx-auto left-0 right-0 bottom-0">
                 </div>
             </div>
         </main>

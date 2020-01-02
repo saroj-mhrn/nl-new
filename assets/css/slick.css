@@ -1,11 +1,11 @@
 @import "../../node_modules/slick-carousel/slick/slick.css";
 
-.slick-arrow { @apply absolute top-50p translate-yhn text-f27 text-green-400; }
+.slick-arrow { @apply absolute top-50p translate-yhn text-f27 text-green-100; }
 
 .slick-dots { @apply absolute bottom-0 left-20 right-20 flex flex-wrap items-center justify-center; }
 .slick-dots button { @apply cursor-pointer block transition text-f0 w-9 h-9 border border-white bg-gray-300 rounded-full m-4 outline-none }
 .slick-dots .slick-active button,
-.slick-dots button:hover { @apply bg-green-400 border-green-300; }
+.slick-dots button:hover { @apply bg-green-100 border-green-100; }
 
 .js-fade-slider-nav .slick-prev { @apply left-27; }
 .js-fade-slider-nav .slick-next { @apply right-27; }
@@ -19,7 +19,7 @@
 .js-slider-review .slick-prev { @apply left-0; }
 .js-slider-review .slick-next { @apply right-0; }
 
-.slick-arrow:hover { @apply text-green-700; }
+.slick-arrow:hover { @apply text-green-100; }
 
 .slick-visible .slick-list { @apply overflow-visible !important; }
 
